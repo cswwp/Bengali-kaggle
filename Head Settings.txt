@@ -1,0 +1,32 @@
+
+######################## Code for Head
+class Head(nn.Module):
+    def __init__(self, nc, n, mid,  ps=0.5):
+        super().__init__()
+        layers = [  AdaptiveConcatPool2d(), Flatten()] + \
+                    bn_drop_lin(nc * 2, mid, True, ps / 2, Mish()) + \
+                    bn_drop_lin(mid, n, True, ps)        
+
+        self.fc = nn.Sequential(*layers)
+        self._init_weight()
+        
+    def _init_weight(self):
+        for m in self.modules():
+            if isinstance(m, nn.Conv2d):
+                torch.nn.init.kaiming_normal_(m.weight)
+            elif isinstance(m, nn.BatchNorm2d):
+                m.weight.data.fill_(1.0)
+                m.bias.data.zero_()
+        
+    def forward(self, x):
+        return self.fc(x)
+
+
+######################## settings to use for head in your code
+# Head Settings:
+#         n =[168 , 11, 7]
+#         nc = i/p to the last layer 
+
+self.head1 = Head(nc,n[0], mid = 786 , ps =0.36)
+self.head2 = Head(nc,n[1], mid = 512 , ps =0.64)
+self.head3 = Head(nc,n[2], mid = 512 , ps =0.50)
