@@ -322,7 +322,6 @@ My_Seresnext_50(
         )
       )
     )
-    (5): AvgPool2d(kernel_size=7, stride=1, padding=0)
   )
   (head1): Head_1(
     (fc): Sequential(
