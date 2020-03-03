@@ -1,0 +1,150 @@
+1 line1 > line0> line2
+
+2 scale 0.5> scale1 > 128x128
+
+new split 基本没有提升
+radam快一丢丢
+仅仅rotate基本没有提升
+仅仅cutmix训练中
+
+
+只用rotate = 用多种augment（在adam+ mixup/cutmix的实验中 0.5 scale）
+只用cutmix效果好，和radam一起用能更快收敛
+
+①max+avg > gem > max
+②just cutmix + rotate > cutmix/mixup +rotate
+③0.5 scale line1 better
+④alpha=0.4 >alpha=1
+⑤rgb gray没有太大区别
+⑥patience 和cos差别不是太大，但是收敛略微快一点点
+
+
+
+liner1 scale0.5 avg+max rotate cutmix radam coslr cv 0.9904
+
+liner1 scale0.5 rgb avg+max rotate cutmix radam coslr cv 0.9885
+
+liner0 scale0.5 GEM rotate no dropout cutmix radam coslr cv 0.9840
+
+liner1 scale0.5 avg+max rotate cutmix radam reducedlr patience=4 cv 0.9881  alpha=0.4
+
+liner1 scale0.5 avg+max rotate cutmix radam reducedlr patience=2 cv 0.9860  alpha=0.4
+
+liner0 scale0.5 avg+max rotate cutmix radam reducedlr patience=2 cv 0.9869  alpha=0.4
+
+liner1 scale  1 avg+max rotate cutmix radam reducedlr patience=2 cv 0.9796  alpha=0.4
+
+liner1 scale0.5 avg+max rotate cutmix radam reducedlr patience=2 cv 0.9832  alpha=1
+
+liner0 scale0.5 MAXp rotate cutmix adam coslr cv 0.9832  alpha=0.4 cv 0.9797
+
+liner1 scale0.5 avg+max rotate augcv cutmix radam reducedlr patience=4 1e-3 weight_decay focallossroot  cv 0.9890  alpha=0.5
+
+
+
+
+
+
+
+最高优先级：
+weight_decay 1e-3
+cutout
+focal loss
+ohem loss
+
+224x224 input 直接resize
+
+
+
+
+TODO
+
+1 scale 0.5 with 3channel 基本太大效果
+
+2 focal loss scale 0.5
+
+3 ohem loss scale 0.5
+
+4 去掉mixup, 去掉augment，只用rotate或者只用水平翻转 只用cutmix+rotate有效果
+
+
+
+1 加入gridmask
+2 regularition add weight decay
+3 cutmix alpha to 1
+4 gem 使用 效果变差
+5 gap后先去掉dropout 使用 效果变差
+
+
+
+
+1 line3 增加tail的特征表示
+
+
+
+
+1 train_resize_128_bs64    scale resize 128 batchsize 64
+
+2 kitti scale 0.5 batchsize 64 RADAM patience 4 factor 0.8
+
+3 kfolder scale 1 batchsize 64
+
+
+
+
+
+
+
+python train.py --model senet50 --outdir 0226/seresnext50_resize224_splitstrict_rotate_liner1_avg+max_radam_cutmix_reducedlr4_lr1e-3 --gpu_ids 2,5 --width 224 --height 224  --feather_data_path BengaliData/feather_resize224/ --mixup 1 --image_mode gray --patience 4 --LR_SCHEDULER REDUCED --optimizer RADAM --lr 1e-3 --lr_ratio 0.65 --batch_size 128
+
+
+
+random split strictly
+resize 128x128
+
+patience 5 factor 0.65
+
+
+实验1  augmix + cutmix  gray
+
+
+实验2  augmix + cutmix  rgb
+
+
+
+no aug no cutmix 9727 115
+cutmix 9862  122
+fmix  9856 78
+
+cutmix + rotate + patience 3 0.75 radam 9912   9904 120epoch
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
