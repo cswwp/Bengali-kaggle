@@ -511,7 +511,7 @@ class se_resnext50_32x4d_bengali(nn.Module):
         self.layer3 = base.layer3
         self.layer4 = base.layer4#
         # Final linear layer
-        self._dropout = nn.Dropout(0.2)
+        self._dropout = nn.Dropout(0.4)
         self._avg_pooling = nn.AdaptiveAvgPool2d(1)
         self._max_pooling = nn.AdaptiveMaxPool2d(1)
         #self._max_blur_pool = kornia.contrib.MaxBlurPool2d(kernel_size=3, ceil_mode=True)
@@ -621,7 +621,7 @@ class se_resnext50_32x4d_bengali(nn.Module):
 
         bs = inputs.size(0)
         # convert to 3 channel
-        inputs = inputs.repeat(1,3,1,1)
+        #inputs = inputs.repeat(1,3,1,1)
 
         x = self.layer0(inputs)
         x = self.layer1(x)
@@ -649,7 +649,7 @@ class se_resnext50_32x4d_bengali(nn.Module):
 
 
 
-        #################liner1###################
+        #################liner1################### with cutmix and RandomShiftRotate 30 augment gives CV 0.9913
         x_avg = self._avg_pooling(x)
         x_max = self._max_pooling(x)
         x = 0.5 * (x_avg + x_max)
