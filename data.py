@@ -251,7 +251,7 @@ class GraphemeDataset(Dataset):
         self.random_earse = RandomErasing(p=1)
         self.width = width
         self.height = height
-        self.aug = None#get_transform(image_mode)
+        self.aug = get_transform(image_mode)
         self.image_mode = image_mode
         self.norm = normalize
 
