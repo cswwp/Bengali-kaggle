@@ -296,7 +296,7 @@ if __name__ == '__main__':
 
     if args.folds == 1:
         in_ch = 1 if args.image_mode == 'gray' else 3
-        in_ch=3
+        #in_ch=3
         if args.finetune:
             if args.model.startswith('efficientnet'):
                 model = EfficientNet.from_pretrained(args.model, in_channels=in_ch).cuda()
