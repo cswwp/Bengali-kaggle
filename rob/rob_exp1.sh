@@ -8,9 +8,9 @@ python train.py \
     --feather_data_path BengaliData/feather_resize224/ \
     --mixup 1 \
     --image_mode gray \
-    --patience 4 \
+    --patience 2 \
     --LR_SCHEDULER REDUCED \
     --optimizer RADAM \
     --lr 1e-3 \
-    --lr_ratio 0.65 \
+    --lr_ratio 0.9 \
     --batch_size 128

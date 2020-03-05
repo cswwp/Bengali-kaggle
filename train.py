@@ -19,6 +19,8 @@ from logger import Logger
 from mixup import cutmix, mixup, mixup_criterion, mixup_criterion_with_ohem, mixup_criterion_with_focal_loss
 from radam import RAdam, AdamW
 
+from gridmask import GridMask
+
 def get_args():
     parser = argparse.ArgumentParser(description="Train program for BELI.")
     parser.add_argument('--model', type=str, default='efficientnet-b4')
@@ -49,6 +51,8 @@ def get_args():
     parser.add_argument('--lr_ratio', type=float, default=0.9)
     parser.add_argument('--patience', type=int, default='2')
 
+    parser.add_argument('--gridmask', type=bool, default=False)
+    parser.add_argument('--gridmask_num_grid', type=str, default='(3, 7)')
 
     # parser.add_argument('--num_workers', type=int, default=8)
 
@@ -417,8 +421,18 @@ if __name__ == '__main__':
 
             train_csv = train_df[train_df['fold'] != fold]
             train_data = data_full[train_df['fold'] != fold]
-
-            train_dataset = GraphemeDataset(train_data, train_csv, args.height, args.width, transform=True)
+            
+            if args.gridmask:
+                import albumentations
+                num_grid = eval(args.gridmask_num_grid)
+                transforms_train = albumentations.Compose([
+                    GridMask(num_grid=num_grid, p=1),
+                ])
+            else:
+                transforms_train = None
+            
+            train_dataset = GraphemeDataset(train_data, train_csv, args.height, args.width, transform=True,
+                                            album_transform=transform_train)
             valid_dataset = GraphemeDataset(val_data, val_csv, args.height, args.width, transform=False)
 
             train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=batch_size,
