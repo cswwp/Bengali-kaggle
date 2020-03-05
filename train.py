@@ -287,6 +287,8 @@ if __name__ == '__main__':
     log.write('schedular: %s\n'%args.LR_SCHEDULER)
     log.write('lr_ratio:%s\n'%args.lr_ratio)
     log.write('patience: %d\n'%args.patience)
+    log.write(f'gridmask: {args.gridmask}\n')
+    log.write(f'gridmask_num_grid: {args.gridmask_num_grid}\n')
 
     criterion = nn.CrossEntropyLoss()
     batch_size = args.batch_size
@@ -346,7 +348,8 @@ if __name__ == '__main__':
         csv_path = args.csv_path  # 'BengaliData'
         feather_data_path = args.feather_data_path  # 'BengaliData/feather128'
         train_loader, valid_loader = generate_data_loader(csv_path, feather_data_path, args.batch_size, args.height, args.width,
-                                                          num_workers=8, image_mode=args.image_mode)
+                                                          num_workers=8, image_mode=args.image_mode,
+                                                          gridmask=args.gridmask, gridmask_num_grid=args.gridmask_num_grid)
 
         ## A very simple loop to train for number of epochs it probably can be made more robust to save only the file with best valid loss
         # history = pd.DataFrame()

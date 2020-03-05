@@ -243,7 +243,9 @@ class RandomErasing:
 
 ## Create dataset function
 class GraphemeDataset(Dataset):
-    def __init__(self, df, label, height, width, transform=True, image_mode='gray'):
+    def __init__(self, df, label, height, width, transform=True,
+                 gridmask=False, image_mode='gray',
+                 album_transform=None):
         self.df = df
         self.label = label
         self.transform = transform
@@ -254,7 +256,7 @@ class GraphemeDataset(Dataset):
         self.aug = get_transform(image_mode)
         self.image_mode = image_mode
         self.norm = normalize
-
+        self.album_transform = album_transform
 
     def __len__(self):
         return len(self.df)
@@ -273,6 +275,9 @@ class GraphemeDataset(Dataset):
             if self.aug:
                 augment = self.aug(image=image)
                 image = augment['image']
+        if self.album_transform:
+            res = self.album_transform(image=image)
+            image = res['image'].astype(np.float32)
 
         #image = np.clip(image, 0.0, 255.0)
         image = np.asarray(image, dtype=np.float32)
@@ -287,7 +292,8 @@ class GraphemeDataset(Dataset):
         return image, label1, label2, label3#, image1
 
 
-def generate_train_val_dataset(csv_path, feather_path, height, width, debug=False, image_mode='gray'):
+def generate_train_val_dataset(csv_path, feather_path, height, width, debug=False, image_mode='gray',
+                               gridmask=False, gridmask_num_grid=None):
     ## Do a train-valid split of the data to create dataset and dataloader . Specify random seed to get reproducibility
 
     ###########################################1 sklearn 随机20% data as val set#####################################
@@ -301,9 +307,17 @@ def generate_train_val_dataset(csv_path, feather_path, height, width, debug=Fals
 
     ############################################1 严格按照子类 随机1/6 data as val set#####################################
     # train_df, data_train_df, valid_df, data_valid_df = split_k_folder(csv_path, feather_path, nfold=6, seed=42)
+    if gridmask:
+        import albumentations
+        num_grid = eval(gridmask_num_grid)
+        transform_train = albumentations.Compose([
+            GridMask(num_grid=num_grid, p=1),
+        ])
+    else:
+        transform_train = None
 
-
-    train_dataset = GraphemeDataset(data_train_df, train_df, height, width, transform=True, image_mode=image_mode)
+    train_dataset = GraphemeDataset(data_train_df, train_df, height, width, transform=True, image_mode=image_mode,
+                                    album_transform=transform_train)
     valid_dataset = GraphemeDataset(data_valid_df, valid_df, height, width, transform=False, image_mode=image_mode)
     torch.cuda.empty_cache()
     gc.collect()
@@ -356,11 +370,13 @@ def visualize(original_image, aug_image, index = 0):
 
 
 
-def generate_data_loader(csv_path, feather_path, batch_size, height, width, num_workers=1, image_mode='gray'):
+def generate_data_loader(csv_path, feather_path, batch_size, height, width, num_workers=1, image_mode='gray',
+                         gridmask=False, gridmask_num_grid=None):
     ## Create data loader and get ready for training .
     #batch_size = 32
 
-    train_dataset, valid_dataset = generate_train_val_dataset(csv_path, feather_path, height, width, image_mode=image_mode)
+    train_dataset, valid_dataset = generate_train_val_dataset(csv_path, feather_path, height, width, image_mode=image_mode,
+                                                              gridmask=False, gridmask_num_grid=None)
     train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=batch_size, num_workers=num_workers, shuffle=True)
     valid_loader = torch.utils.data.DataLoader(valid_dataset, batch_size=batch_size, num_workers=num_workers, shuffle=False)
 
