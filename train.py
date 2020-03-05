@@ -19,8 +19,6 @@ from logger import Logger
 from mixup import cutmix, mixup, mixup_criterion, mixup_criterion_with_ohem, mixup_criterion_with_focal_loss
 from radam import RAdam, AdamW
 
-from gridmask import GridMask
-
 def get_args():
     parser = argparse.ArgumentParser(description="Train program for BELI.")
     parser.add_argument('--model', type=str, default='efficientnet-b4')
@@ -51,9 +49,6 @@ def get_args():
     parser.add_argument('--lr_ratio', type=float, default=0.9)
     parser.add_argument('--patience', type=int, default='2')
 
-    parser.add_argument('--gridmask', type=bool, default=False)
-    parser.add_argument('--gridmask_num_grid', type=str, default='(3, 7)')
-
     # parser.add_argument('--num_workers', type=int, default=8)
 
     args = parser.parse_args()
@@ -79,7 +74,11 @@ def train(epoch, train_loader, model, optimizer, criterion, log, args):
     recall_consonant_all = 0.0
     #ohem_percent = .6
     # print('straing')
+    first_run = True
     for idx, (inputs, labels1, labels2, labels3) in enumerate(tqdm(train_loader)):
+        if first_run:
+            plt.imshow()
+            
         #print('input()', inputs.shape, labels1.shape, labels2.shape, labels3.shape)
         if args.mixup:
             if 0:#np.random.rand()<0.5:
@@ -287,8 +286,6 @@ if __name__ == '__main__':
     log.write('schedular: %s\n'%args.LR_SCHEDULER)
     log.write('lr_ratio:%s\n'%args.lr_ratio)
     log.write('patience: %d\n'%args.patience)
-    log.write(f'gridmask: {args.gridmask}\n')
-    log.write(f'gridmask_num_grid: {args.gridmask_num_grid}\n')
 
     criterion = nn.CrossEntropyLoss()
     batch_size = args.batch_size
@@ -329,9 +326,6 @@ if __name__ == '__main__':
         elif args.optimizer == 'RADAM':
             optimizer = RAdam(filter(lambda p: p.requires_grad, model.parameters()), lr=args.lr)#, weight_decay=1e-3 )
 
-
-
-
         if args.LR_SCHEDULER == 'COS':
             scheduler = CosineAnnealingLR_with_Restart(optimizer,
                                                        T_max=args.cycle_inter,
@@ -348,8 +342,7 @@ if __name__ == '__main__':
         csv_path = args.csv_path  # 'BengaliData'
         feather_data_path = args.feather_data_path  # 'BengaliData/feather128'
         train_loader, valid_loader = generate_data_loader(csv_path, feather_data_path, args.batch_size, args.height, args.width,
-                                                          num_workers=8, image_mode=args.image_mode,
-                                                          gridmask=args.gridmask, gridmask_num_grid=args.gridmask_num_grid)
+                                                          num_workers=8, image_mode=args.image_mode)
 
         ## A very simple loop to train for number of epochs it probably can be made more robust to save only the file with best valid loss
         # history = pd.DataFrame()
@@ -425,17 +418,7 @@ if __name__ == '__main__':
             train_csv = train_df[train_df['fold'] != fold]
             train_data = data_full[train_df['fold'] != fold]
             
-            if args.gridmask:
-                import albumentations
-                num_grid = eval(args.gridmask_num_grid)
-                transforms_train = albumentations.Compose([
-                    GridMask(num_grid=num_grid, p=1),
-                ])
-            else:
-                transforms_train = None
-            
-            train_dataset = GraphemeDataset(train_data, train_csv, args.height, args.width, transform=True,
-                                            album_transform=transform_train)
+            train_dataset = GraphemeDataset(train_data, train_csv, args.height, args.width, transform=True)
             valid_dataset = GraphemeDataset(val_data, val_csv, args.height, args.width, transform=False)
 
             train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=batch_size,
