@@ -74,11 +74,7 @@ def train(epoch, train_loader, model, optimizer, criterion, log, args):
     recall_consonant_all = 0.0
     #ohem_percent = .6
     # print('straing')
-    first_run = True
     for idx, (inputs, labels1, labels2, labels3) in enumerate(tqdm(train_loader)):
-        if first_run:
-            plt.imshow()
-            
         #print('input()', inputs.shape, labels1.shape, labels2.shape, labels3.shape)
         if args.mixup:
             if 0:#np.random.rand()<0.5:
