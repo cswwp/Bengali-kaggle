@@ -1,6 +1,7 @@
 # Bengali-kaggle
 
 best result
+
 liner5 CV 0.9905 LB 0.9810  (train with cutmix randomshiftrotate and input size is 128x128x1)
 Liner1 CV 0.9913 LB 0.9810  (train with cutmix randomshiftrotate and input size is 128x128x1)
 
