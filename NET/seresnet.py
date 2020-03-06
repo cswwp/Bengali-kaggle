@@ -532,7 +532,7 @@ class se_resnext50_32x4d_bengali(nn.Module):
 
 
         ###################liner1###################
-        self.liner = nn.Linear(out_channels, 186)
+        #self.liner = nn.Linear(out_channels, 186)
 
 
 
@@ -592,15 +592,15 @@ class se_resnext50_32x4d_bengali(nn.Module):
 
 
 
-        # ##################liner5###################
-        # #vowel_diacritic
-        # self.fc11 = nn.Linear(out_channels, 512)
-        # self.fc12 = nn.Linear(512, 11)
-        # # grapheme_root
-        # self.fc2 = nn.Linear(out_channels, 168)
-        # # consonant_diacritic
-        # self.fc3 = nn.Linear(out_channels, 7)
-        # self.act = nn.ELU()
+        ##################liner5###################
+        #vowel_diacritic
+        self.fc11 = nn.Linear(out_channels, 512)
+        self.fc12 = nn.Linear(512, 11)
+        # grapheme_root
+        self.fc2 = nn.Linear(out_channels, 168)
+        # consonant_diacritic
+        self.fc3 = nn.Linear(out_channels, 7)
+        self.act = nn.ELU()
 
 
         # ##################liner6###################
@@ -645,17 +645,17 @@ class se_resnext50_32x4d_bengali(nn.Module):
 
 
         #################liner1################### with cutmix and RandomShiftRotate 30 augment gives CV 0.9913
-        x_avg = self._avg_pooling(x)
-        x_max = self._max_pooling(x)
-        x = 0.5 * (x_avg + x_max)
-        x = x.view(bs, -1)
-        x = self._dropout(x)
-        x = self.liner(x)
-        preds = torch.split(x, [11, 168, 7], dim=1)
-        x1 = preds[0]
-        x2 = preds[1]
-        x3 = preds[2]
-        return x1, x2, x3
+        # x_avg = self._avg_pooling(x)
+        # x_max = self._max_pooling(x)
+        # x = 0.5 * (x_avg + x_max)
+        # x = x.view(bs, -1)
+        # x = self._dropout(x)
+        # x = self.liner(x)
+        # preds = torch.split(x, [11, 168, 7], dim=1)
+        # x1 = preds[0]
+        # x2 = preds[1]
+        # x3 = preds[2]
+        # return x1, x2, x3
 
 
 
@@ -760,18 +760,18 @@ class se_resnext50_32x4d_bengali(nn.Module):
         # return x1, x2, x3
 
 
-        # ###################liner5###################
-        # x_avg = self._avg_pooling(x)
-        # x_max = self._max_pooling(x)
-        # x = 0.5 * (x_avg + x_max)
-        # x = x.view(bs, -1)
-        #
-        # x1 = self._dropout(self.act(self.fc11(x)))
-        # x1 = self.fc12(x1)
-        #
-        # x2 = self.fc2(x)
-        # x3 = self.fc3(x)
-        # return x1, x2, x3
+        ###################liner5###################
+        x_avg = self._avg_pooling(x)
+        x_max = self._max_pooling(x)
+        x = 0.5 * (x_avg + x_max)
+        x = x.view(bs, -1)
+
+        x1 = self._dropout(self.act(self.fc11(x)))
+        x1 = self.fc12(x1)
+
+        x2 = self.fc2(x)
+        x3 = self.fc3(x)
+        return x1, x2, x3
 
 
 
@@ -818,12 +818,12 @@ if __name__ == '__main__':
 
 
     path = '/data1/wangwenpeng/Bengali/seresnext50_0.5_newaug_liner0/global_max_recall.pth'
-
-    base = se_resnext50_32x4d(pretrained='imagenet', in_ch=3)
+    path = '/data1/wangwenpeng/Bengali-kaggle/models_ben/0226/seresnext50_resize128_liner5_avg+max_radam_cutmix_reducedlr4_lr1e-3_batch_size512/global_max_recall.pth'
+    base = se_resnext50_32x4d(pretrained='imagenet', in_ch=1)
     net = se_resnext50_32x4d_bengali(base=base)
 
-    #net = nn.DataParallel(net).cuda()
-    #net.load_state_dict(torch.load(path))
+    # net = nn.DataParallel(net).cuda()
+    # net.load_state_dict(torch.load(path))
     print(net)
 
     img = torch.rand([1, 1, 68, 118])
