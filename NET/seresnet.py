@@ -536,7 +536,6 @@ class se_resnext50_32x4d_bengali(nn.Module):
 
 
 
-
         # ###################liner2###################
         # self.liner1 = nn.Linear(2048, 512)
         # self.act = nn.LeakyReLU()
@@ -592,7 +591,6 @@ class se_resnext50_32x4d_bengali(nn.Module):
         # self.line3 = nn.Linear(512, 7)
 
 
-
         ##################liner5###################
         #vowel_diacritic
         self.fc11 = nn.Linear(out_channels, 512)
@@ -602,7 +600,6 @@ class se_resnext50_32x4d_bengali(nn.Module):
         # consonant_diacritic
         self.fc3 = nn.Linear(out_channels, 7)
         self.act = nn.ELU()
-
 
         # ##################liner6###################
         # self.drop_block0 = DropBlock2D(block_size=16, drop_prob=0.2)
@@ -647,8 +644,6 @@ class se_resnext50_32x4d_bengali(nn.Module):
 
 
 
-
-
         # #################liner1################### with cutmix and RandomShiftRotate 30 augment gives CV 0.9913
         # x_avg = self._avg_pooling(x)
         # x_max = self._max_pooling(x)
@@ -661,8 +656,6 @@ class se_resnext50_32x4d_bengali(nn.Module):
         # x2 = preds[1]
         # x3 = preds[2]
         # return x1, x2, x3
-
-
 
 
 
@@ -783,7 +776,6 @@ class se_resnext50_32x4d_bengali(nn.Module):
 
 
 
-
         # # ###################liner 6 base features###################
         # bs = inputs.size(0)
         # # convert to 3 channel
@@ -830,12 +822,12 @@ if __name__ == '__main__':
     base = se_resnext50_32x4d(pretrained='imagenet', in_ch=1)
     net = se_resnext50_32x4d_bengali(base=base)
 
-    #net = nn.DataParallel(net).cuda()
-    #net.load_state_dict(torch.load(path))
+    net = nn.DataParallel(net).cuda()
+    net.load_state_dict(torch.load(path))
     print(net)
 
     img = torch.rand([1, 1, 68, 118])
-    #img = img.cuda()
+    img = img.cuda()
 
     x1, x2, x3 = net(img)
     print(x1.shape, x2.shape, x3.shape)
