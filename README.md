@@ -1,7 +1,8 @@
 # Bengali-kaggle
 
 best result
-CV 0.9913 LB 0.9810
+liner5 CV 0.9905 LB 0.9810  (train with cutmix randomshiftrotate and input size is 128x128x1)
+Liner1 CV 0.9913 LB 0.9810  (train with cutmix randomshiftrotate and input size is 128x128x1)
 
 
 CMD RUN:
@@ -37,6 +38,14 @@ lr_ratio: ReduceLROnPlateau factor
 batch_size: batch_size
 
 
+
+After i check our submission in kaggle, i find the liner5 is the best model now
+
+liner5 head + cutmix + rotate inputsize 128x128x1 global_max_recall CV 0.9905 LB 0.9810
+liner1 head + cutmix + rotate inputsize 128x128x1 global_max_recall CV 0.9913 LB 0.9810
+
+
+So the liner5's gap between CV an LB is small, so it should be better model
 
 
 
