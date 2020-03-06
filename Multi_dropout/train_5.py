@@ -9,7 +9,7 @@ from tqdm import tqdm
 from data import GraphemeDataset
 from metric import macro_recall_multi, macro_recall_multi_mixup
 from data import generate_data_loader
-from NET.efficientnet import EfficientNet
+# from NET.efficientnet import EfficientNet
 import pandas as pd
 import gc
 import torch.optim
@@ -18,11 +18,16 @@ from lr_cos_restart import CosineAnnealingLR_with_Restart
 from logger import Logger
 from mixup import cutmix, mixup, mixup_criterion, mixup_criterion_with_ohem, mixup_criterion_with_focal_loss
 from radam import RAdam, AdamW
+from my_common import *
+from balaji_pack import *
+
+seed_everything(42)
 
 def get_args():
     parser = argparse.ArgumentParser(description="Train program for BELI.")
     parser.add_argument('--model', type=str, default='efficientnet-b4')
     parser.add_argument('--batch_size', type=int, default=512)
+    parser.add_argument('--balaji_number', type=int, default=0)
 
     parser.add_argument('--optimizer', type=str, default='ADAM', choices=['SGD', 'ADAM', 'RADAM', 'ADAMW', 'OVER9000'])
     parser.add_argument('--lr', type=float, default=1e-3)
@@ -31,10 +36,11 @@ def get_args():
     parser.add_argument('--log_interval', type=int, default=2000)
     # parser.add_argument('--epochs', type=int, default=60)
     parser.add_argument('--num_workers', type=int, default=8)
-    parser.add_argument('--csv_path', type=str, default='BengaliData')
+    parser.add_argument('--csv_path', type=str, default='./')
     parser.add_argument('--feather_data_path', type=str, default='BengaliData/feather128')
     parser.add_argument('--resume', type=bool, default=False)
-    parser.add_argument('--cycle_inter', type=int, default=200)
+    # parser.add_argument('--cycle_inter', type=int, default=200)
+    parser.add_argument('--cycle_inter', type=int, default=120)
     parser.add_argument('--cycle_num', type=int, default=1)
     parser.add_argument('--folds', type=int, default=1)
     parser.add_argument('--mixup', type=int, default=0)
@@ -48,6 +54,7 @@ def get_args():
     parser.add_argument('--LR_SCHEDULER', type=str, default='COS', choices=['REDUCED', 'COS'])
     parser.add_argument('--lr_ratio', type=float, default=0.9)
     parser.add_argument('--patience', type=int, default='2')
+
 
     # parser.add_argument('--num_workers', type=int, default=8)
 
@@ -295,19 +302,21 @@ if __name__ == '__main__':
 
     if args.folds == 1:
         in_ch = 1 if args.image_mode == 'gray' else 3
-        #in_ch=3
+        in_ch=3
         if args.finetune:
             if args.model.startswith('efficientnet'):
                 model = EfficientNet.from_pretrained(args.model, in_channels=in_ch).cuda()
             elif args.model.startswith('se'):
-                from NET.seresnet import se50_32_4d_resnext
+                from seresnet_5 import se50_32_4d_resnext
                 model = se50_32_4d_resnext(in_ch=in_ch).cuda()
-        #
+                # change_activ(model, 2)
+                # print(model)
+                # STOP
         else:
             if args.model.startswith('efficientnet'):
                 model = EfficientNet.from_name(args.model, in_channels=in_ch).cuda()
             elif args.model.startswith('se'):
-                from NET.seresnet import se50_32_4d_resnext
+                from seresnet_5 import se50_32_4d_resnext
                 model = se50_32_4d_resnext(pretrained=None, in_ch=in_ch).cuda()
 
 
@@ -321,6 +330,9 @@ if __name__ == '__main__':
             optimizer = Over9000(model.parameters(), lr=args.lr)#, weight_decay=1e-3)  ## New once
         elif args.optimizer == 'RADAM':
             optimizer = RAdam(filter(lambda p: p.requires_grad, model.parameters()), lr=args.lr)#, weight_decay=1e-3 )
+
+
+
 
         if args.LR_SCHEDULER == 'COS':
             scheduler = CosineAnnealingLR_with_Restart(optimizer,
@@ -413,7 +425,7 @@ if __name__ == '__main__':
 
             train_csv = train_df[train_df['fold'] != fold]
             train_data = data_full[train_df['fold'] != fold]
-            
+
             train_dataset = GraphemeDataset(train_data, train_csv, args.height, args.width, transform=True)
             valid_dataset = GraphemeDataset(val_data, val_csv, args.height, args.width, transform=False)
 

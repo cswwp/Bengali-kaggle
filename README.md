@@ -5,6 +5,7 @@ liner5 CV 0.9905 LB 0.9810  (train with cutmix randomshiftrotate and input size 
 Liner1 CV 0.9913 LB 0.9810  (train with cutmix randomshiftrotate and input size is 128x128x1)
 
 
+
 CMD RUN:
 python train.py --model senet50 --outdir YOUR_OUT_DIR
                 --gpu_ids 2,3
@@ -46,9 +47,6 @@ liner1 head + cutmix + rotate inputsize 128x128x1 global_max_recall CV 0.9913 LB
 
 
 So the liner5's gap between CV an LB is small, so it should be better model
-
-
-
 
 
 
