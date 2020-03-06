@@ -1,0 +1,2490 @@
+TRAINING BENGALI
+BATCHS SIZE:512
+OUT DIR:0226/seresnext50_resize128_liner5_avg+max_radam_cutmix_reducedlr4_lr1e-3_batch_size512
+MODEL:senet50
+OPTIMIZER:RADAM
+CYCLE INTER:200
+CYCLE NUM:1
+LR:0.001000
+MIXUP: 1
+ALPHA_mixup: 0.200000
+ALPHA_cutmix: 0.500000
+height: 128
+width: 128
+feather_data_path: BengaliData/feather_resize128/
+image_mode: gray
+schedular: REDUCED
+lr_ratio:0.7
+patience: 4
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:0 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.001000
+ train epoch : 0	acc : 0.49%
+loss : 9.7939
+recall_grapheme: 0.20156936562478228	 recall_vowel: 0.4403113067392864	 recall_consonant: 0.4711334547364331
+recall: 0.3286458731813208
+val epoch: 0 	val acc : 0.89%
+loss : 2.9792
+recall_grapheme:0.7553705389547576	recall_vowel:0.9303068901308037	recall_consonant:0.9155043561536647
+recall: 0.8391380810484959
+Curr validation recall has increased from:  0.0000 to: 0.8391. Saving curr cycle checkpoint
+Global validation recall has increased from:  0.0000 to: 0.8391. Saving global checkpoint
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:1 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.001000
+ train epoch : 1	acc : 0.60%
+loss : 7.5717
+recall_grapheme: 0.40422852469164117	 recall_vowel: 0.5953900256331667	 recall_consonant: 0.5992076678744026
+recall: 0.5007636857227133
+val epoch: 1 	val acc : 0.94%
+loss : 1.7905
+recall_grapheme:0.8466693533034214	recall_vowel:0.9619466936215205	recall_consonant:0.945394665283196
+recall: 0.9001700163778898
+Curr validation recall has increased from:  0.8391 to: 0.9002. Saving curr cycle checkpoint
+Global validation recall has increased from:  0.8391 to: 0.9002. Saving global checkpoint
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:2 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.001000
+ train epoch : 2	acc : 0.65%
+loss : 6.6188
+recall_grapheme: 0.4817870396898273	 recall_vowel: 0.643458725962333	 recall_consonant: 0.6434762492857184
+recall: 0.5626272636569262
+val epoch: 2 	val acc : 0.92%
+loss : 2.3354
+recall_grapheme:0.8605203577167602	recall_vowel:0.9660462869227345	recall_consonant:0.9470041551698621
+recall: 0.9085227893815289
+Curr validation recall has increased from:  0.9002 to: 0.9085. Saving curr cycle checkpoint
+Global validation recall has increased from:  0.9002 to: 0.9085. Saving global checkpoint
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:3 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.001000
+ train epoch : 3	acc : 0.66%
+loss : 6.2534
+recall_grapheme: 0.5081457519282792	 recall_vowel: 0.6568671242869533	 recall_consonant: 0.6555124314426605
+recall: 0.5821677648965436
+val epoch: 3 	val acc : 0.96%
+loss : 1.3228
+recall_grapheme:0.900430506075219	recall_vowel:0.9729714466797665	recall_consonant:0.9728897167823715
+recall: 0.9366805439031439
+Curr validation recall has increased from:  0.9085 to: 0.9367. Saving curr cycle checkpoint
+Global validation recall has increased from:  0.9085 to: 0.9367. Saving global checkpoint
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:4 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.001000
+ train epoch : 4	acc : 0.68%
+loss : 5.8808
+recall_grapheme: 0.5449040089669522	 recall_vowel: 0.6756259511143465	 recall_consonant: 0.6766766011505595
+recall: 0.6105276425497022
+val epoch: 4 	val acc : 0.96%
+loss : 1.5030
+recall_grapheme:0.9070619922265717	recall_vowel:0.976042688519483	recall_consonant:0.9810269698596596
+recall: 0.9427984107080716
+Curr validation recall has increased from:  0.9367 to: 0.9428. Saving curr cycle checkpoint
+Global validation recall has increased from:  0.9367 to: 0.9428. Saving global checkpoint
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:5 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.001000
+ train epoch : 5	acc : 0.68%
+loss : 5.8181
+recall_grapheme: 0.5451636656514722	 recall_vowel: 0.6710615146272733	 recall_consonant: 0.68181034176912
+recall: 0.6107997969248344
+val epoch: 5 	val acc : 0.97%
+loss : 1.3000
+recall_grapheme:0.925677693818184	recall_vowel:0.9817744003214771	recall_consonant:0.982395699995604
+recall: 0.9538813719883618
+Curr validation recall has increased from:  0.9428 to: 0.9539. Saving curr cycle checkpoint
+Global validation recall has increased from:  0.9428 to: 0.9539. Saving global checkpoint
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:6 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.001000
+ train epoch : 6	acc : 0.68%
+loss : 5.7844
+recall_grapheme: 0.5411060194963311	 recall_vowel: 0.6688575499407912	 recall_consonant: 0.6770170989654674
+recall: 0.6070216719747302
+val epoch: 6 	val acc : 0.97%
+loss : 1.1383
+recall_grapheme:0.9227370896668456	recall_vowel:0.9764479342894037	recall_consonant:0.9835721356403733
+recall: 0.9513735623158673
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:7 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.001000
+ train epoch : 7	acc : 0.71%
+loss : 5.3489
+recall_grapheme: 0.5744602337488723	 recall_vowel: 0.7003738685650788	 recall_consonant: 0.7103498453074281
+recall: 0.6399110453425639
+val epoch: 7 	val acc : 0.97%
+loss : 1.3832
+recall_grapheme:0.9310440742743364	recall_vowel:0.9789446751672577	recall_consonant:0.9823639312049545
+recall: 0.9558491887302208
+Curr validation recall has increased from:  0.9539 to: 0.9558. Saving curr cycle checkpoint
+Global validation recall has increased from:  0.9539 to: 0.9558. Saving global checkpoint
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:8 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.001000
+ train epoch : 8	acc : 0.69%
+loss : 5.5630
+recall_grapheme: 0.5560126222683923	 recall_vowel: 0.6799525039088213	 recall_consonant: 0.6881329695704604
+recall: 0.6200276795040172
+val epoch: 8 	val acc : 0.97%
+loss : 1.2720
+recall_grapheme:0.9317187418767425	recall_vowel:0.9796488237692932	recall_consonant:0.985277698625674
+recall: 0.9570910015371132
+Curr validation recall has increased from:  0.9558 to: 0.9571. Saving curr cycle checkpoint
+Global validation recall has increased from:  0.9558 to: 0.9571. Saving global checkpoint
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:9 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.001000
+ train epoch : 9	acc : 0.71%
+loss : 5.1964
+recall_grapheme: 0.5912407381140606	 recall_vowel: 0.6954968473217967	 recall_consonant: 0.7045597840975365
+recall: 0.6456345269118635
+val epoch: 9 	val acc : 0.97%
+loss : 1.2286
+recall_grapheme:0.9242178217468274	recall_vowel:0.9760265943178099	recall_consonant:0.9753811891294761
+recall: 0.9499608567352351
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:10 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.001000
+ train epoch : 10	acc : 0.72%
+loss : 4.9640
+recall_grapheme: 0.6033576807805653	 recall_vowel: 0.7120857530352148	 recall_consonant: 0.7252103913363583
+recall: 0.661002876483176
+val epoch: 10 	val acc : 0.98%
+loss : 0.9037
+recall_grapheme:0.9453017716584036	recall_vowel:0.9822796222424806	recall_consonant:0.9850955409977711
+recall: 0.9644946766392647
+Curr validation recall has increased from:  0.9571 to: 0.9645. Saving curr cycle checkpoint
+Global validation recall has increased from:  0.9571 to: 0.9645. Saving global checkpoint
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:11 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.001000
+ train epoch : 11	acc : 0.71%
+loss : 5.1947
+recall_grapheme: 0.5795667426924993	 recall_vowel: 0.69362667211928	 recall_consonant: 0.7032710242205027
+recall: 0.639007795431195
+val epoch: 11 	val acc : 0.97%
+loss : 1.1896
+recall_grapheme:0.9312658069551335	recall_vowel:0.9829475146949452	recall_consonant:0.9896252123932799
+recall: 0.9587760852496228
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:12 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.001000
+ train epoch : 12	acc : 0.70%
+loss : 5.2061
+recall_grapheme: 0.5808692397338705	 recall_vowel: 0.6897050500659299	 recall_consonant: 0.7002168280832517
+recall: 0.6379150894042306
+val epoch: 12 	val acc : 0.97%
+loss : 1.2604
+recall_grapheme:0.9298310142641694	recall_vowel:0.9778005023149829	recall_consonant:0.9828392619152349
+recall: 0.9550754481896389
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:13 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.001000
+ train epoch : 13	acc : 0.72%
+loss : 4.9268
+recall_grapheme: 0.6030471149244513	 recall_vowel: 0.7057942141737613	 recall_consonant: 0.7147873356280011
+recall: 0.6566689449126657
+val epoch: 13 	val acc : 0.98%
+loss : 1.0520
+recall_grapheme:0.9445131834077531	recall_vowel:0.9812650041850458	recall_consonant:0.9852061478007981
+recall: 0.9638743797003378
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:14 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.001000
+ train epoch : 14	acc : 0.72%
+loss : 4.9475
+recall_grapheme: 0.6062553367847574	 recall_vowel: 0.7064218955184641	 recall_consonant: 0.7165383798847992
+recall: 0.658867737243194
+val epoch: 14 	val acc : 0.97%
+loss : 1.1948
+recall_grapheme:0.9271187979509911	recall_vowel:0.9806805833848825	recall_consonant:0.9799816699604387
+recall: 0.9537249623118257
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:15 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.001000
+ train epoch : 15	acc : 0.72%
+loss : 4.8751
+recall_grapheme: 0.613637944612813	 recall_vowel: 0.70942549070245	 recall_consonant: 0.7206486061858424
+recall: 0.6643374965284796
+val epoch: 15 	val acc : 0.97%
+loss : 1.1855
+recall_grapheme:0.9399496098914741	recall_vowel:0.9833145628986201	recall_consonant:0.9880487659468988
+recall: 0.9628156371571173
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:16 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000700
+ train epoch : 16	acc : 0.71%
+loss : 5.0555
+recall_grapheme: 0.5956107566120636	 recall_vowel: 0.6919414610303286	 recall_consonant: 0.7080380962227496
+recall: 0.6478002676193008
+val epoch: 16 	val acc : 0.98%
+loss : 1.1750
+recall_grapheme:0.9476505901758616	recall_vowel:0.982546869310438	recall_consonant:0.9820349821890988
+recall: 0.9649707579628156
+Curr validation recall has increased from:  0.9645 to: 0.9650. Saving curr cycle checkpoint
+Global validation recall has increased from:  0.9645 to: 0.9650. Saving global checkpoint
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:17 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000700
+ train epoch : 17	acc : 0.72%
+loss : 4.8096
+recall_grapheme: 0.6025710244499066	 recall_vowel: 0.7003015584777674	 recall_consonant: 0.7132330788620663
+recall: 0.6546691715599122
+val epoch: 17 	val acc : 0.98%
+loss : 0.8279
+recall_grapheme:0.9532781554690032	recall_vowel:0.9860515736951847	recall_consonant:0.9858739325883419
+recall: 0.9696204543053831
+Curr validation recall has increased from:  0.9650 to: 0.9696. Saving curr cycle checkpoint
+Global validation recall has increased from:  0.9650 to: 0.9696. Saving global checkpoint
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:18 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000700
+ train epoch : 18	acc : 0.71%
+loss : 4.8515
+recall_grapheme: 0.6007705509301071	 recall_vowel: 0.6971101441128629	 recall_consonant: 0.7107680766372428
+recall: 0.6523548306525803
+val epoch: 18 	val acc : 0.98%
+loss : 1.0099
+recall_grapheme:0.9489762513418022	recall_vowel:0.9840611058129322	recall_consonant:0.9819528660389685
+recall: 0.9659916186338764
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:19 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000700
+ train epoch : 19	acc : 0.72%
+loss : 4.6902
+recall_grapheme: 0.6123226837736231	 recall_vowel: 0.7060083310197173	 recall_consonant: 0.7199907318420667
+recall: 0.6626611076022573
+val epoch: 19 	val acc : 0.98%
+loss : 0.8874
+recall_grapheme:0.9491092936153513	recall_vowel:0.9865150131144033	recall_consonant:0.9894585222367717
+recall: 0.9685480306454696
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:20 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000700
+ train epoch : 20	acc : 0.73%
+loss : 4.6293
+recall_grapheme: 0.6247840715948545	 recall_vowel: 0.714330929702935	 recall_consonant: 0.7250261131728775
+recall: 0.6722312965163795
+val epoch: 20 	val acc : 0.98%
+loss : 0.8983
+recall_grapheme:0.9576500989315545	recall_vowel:0.9862888657989439	recall_consonant:0.9843451657729912
+recall: 0.9714835573587608
+Curr validation recall has increased from:  0.9696 to: 0.9715. Saving curr cycle checkpoint
+Global validation recall has increased from:  0.9696 to: 0.9715. Saving global checkpoint
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:21 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000700
+ train epoch : 21	acc : 0.71%
+loss : 4.8529
+recall_grapheme: 0.6034384252966664	 recall_vowel: 0.6962686432456864	 recall_consonant: 0.7068811875038757
+recall: 0.6525066703357241
+val epoch: 21 	val acc : 0.98%
+loss : 0.9524
+recall_grapheme:0.9550560300595257	recall_vowel:0.9858553536154996	recall_consonant:0.9868464210232678
+recall: 0.9707034586894542
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:22 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000700
+ train epoch : 22	acc : 0.71%
+loss : 4.7774
+recall_grapheme: 0.6036213063470075	 recall_vowel: 0.6937728875584169	 recall_consonant: 0.7111422435559381
+recall: 0.6530394359520928
+val epoch: 22 	val acc : 0.98%
+loss : 1.0938
+recall_grapheme:0.9595882134712077	recall_vowel:0.9869441561831201	recall_consonant:0.9882196994410319
+recall: 0.9735850706416417
+Curr validation recall has increased from:  0.9715 to: 0.9736. Saving curr cycle checkpoint
+Global validation recall has increased from:  0.9715 to: 0.9736. Saving global checkpoint
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:23 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000700
+ train epoch : 23	acc : 0.72%
+loss : 4.7704
+recall_grapheme: 0.61768760917978	 recall_vowel: 0.7041005951673898	 recall_consonant: 0.7179739134236653
+recall: 0.6643624317376543
+val epoch: 23 	val acc : 0.98%
+loss : 0.8176
+recall_grapheme:0.9585486611661923	recall_vowel:0.9868119465663724	recall_consonant:0.9909033420922404
+recall: 0.9737031527477493
+Curr validation recall has increased from:  0.9736 to: 0.9737. Saving curr cycle checkpoint
+Global validation recall has increased from:  0.9736 to: 0.9737. Saving global checkpoint
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:24 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000700
+ train epoch : 24	acc : 0.73%
+loss : 4.4276
+recall_grapheme: 0.623957095058987	 recall_vowel: 0.7136651975948258	 recall_consonant: 0.7282381456256161
+recall: 0.672454383334604
+val epoch: 24 	val acc : 0.98%
+loss : 1.1969
+recall_grapheme:0.9415342050063092	recall_vowel:0.9792402286331983	recall_consonant:0.9856775880248826
+recall: 0.9619965566676749
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:25 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000700
+ train epoch : 25	acc : 0.73%
+loss : 4.5675
+recall_grapheme: 0.6266851386695972	 recall_vowel: 0.7139528893523921	 recall_consonant: 0.7250115909199742
+recall: 0.6730836894028905
+val epoch: 25 	val acc : 0.98%
+loss : 0.8665
+recall_grapheme:0.9606382055803678	recall_vowel:0.9880858947855465	recall_consonant:0.9928065648231021
+recall: 0.9755422176923462
+Curr validation recall has increased from:  0.9737 to: 0.9755. Saving curr cycle checkpoint
+Global validation recall has increased from:  0.9737 to: 0.9755. Saving global checkpoint
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:26 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000700
+ train epoch : 26	acc : 0.74%
+loss : 4.3949
+recall_grapheme: 0.6361532289280061	 recall_vowel: 0.718787930850759	 recall_consonant: 0.7306694075679212
+recall: 0.6804409490686731
+val epoch: 26 	val acc : 0.98%
+loss : 0.9226
+recall_grapheme:0.9511566826558383	recall_vowel:0.9861226767457829	recall_consonant:0.988256858884218
+recall: 0.9691732252354197
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:27 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000700
+ train epoch : 27	acc : 0.72%
+loss : 4.6468
+recall_grapheme: 0.6218282015823289	 recall_vowel: 0.7054740536627172	 recall_consonant: 0.7151434280552877
+recall: 0.6660684712206658
+val epoch: 27 	val acc : 0.98%
+loss : 0.7004
+recall_grapheme:0.9619860921354441	recall_vowel:0.9899020451643713	recall_consonant:0.9866838967099117
+recall: 0.975139531536293
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:28 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000700
+ train epoch : 28	acc : 0.72%
+loss : 4.6026
+recall_grapheme: 0.6164351401580327	 recall_vowel: 0.7027866054239958	 recall_consonant: 0.7167249013096508
+recall: 0.6630954467624282
+val epoch: 28 	val acc : 0.98%
+loss : 0.8891
+recall_grapheme:0.9547900068013341	recall_vowel:0.985406382687147	recall_consonant:0.9900107939051429
+recall: 0.9712492975487396
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:29 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000700
+ train epoch : 29	acc : 0.73%
+loss : 4.5856
+recall_grapheme: 0.6345932893303246	 recall_vowel: 0.7148913421793345	 recall_consonant: 0.7282981321802537
+recall: 0.6780940132550599
+val epoch: 29 	val acc : 0.98%
+loss : 0.7733
+recall_grapheme:0.955387978739261	recall_vowel:0.9882788004344066	recall_consonant:0.9869812074753738
+recall: 0.9715089913470757
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:30 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000700
+ train epoch : 30	acc : 0.73%
+loss : 4.4299
+recall_grapheme: 0.6296658522468306	 recall_vowel: 0.7110904814402729	 recall_consonant: 0.7237177903415482
+recall: 0.6735349940688702
+val epoch: 30 	val acc : 0.98%
+loss : 0.7395
+recall_grapheme:0.9552702321300275	recall_vowel:0.9882798754990597	recall_consonant:0.9867681686725666
+recall: 0.97139712710792
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:31 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000490
+ train epoch : 31	acc : 0.74%
+loss : 4.2725
+recall_grapheme: 0.6399922960990726	 recall_vowel: 0.7192172898797605	 recall_consonant: 0.7349920635757461
+recall: 0.6835484864134129
+val epoch: 31 	val acc : 0.99%
+loss : 0.7232
+recall_grapheme:0.9658996483325399	recall_vowel:0.9890869965717545	recall_consonant:0.9917711779395102
+recall: 0.9781643677940859
+Curr validation recall has increased from:  0.9755 to: 0.9782. Saving curr cycle checkpoint
+Global validation recall has increased from:  0.9755 to: 0.9782. Saving global checkpoint
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:32 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000490
+ train epoch : 32	acc : 0.74%
+loss : 4.4026
+recall_grapheme: 0.6360588066623409	 recall_vowel: 0.7160665759223337	 recall_consonant: 0.7310415864978628
+recall: 0.6798064439362205
+val epoch: 32 	val acc : 0.99%
+loss : 0.5648
+recall_grapheme:0.9647667225041966	recall_vowel:0.9901354705360711	recall_consonant:0.9905130291429768
+recall: 0.97754548617186
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:33 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000490
+ train epoch : 33	acc : 0.75%
+loss : 4.1822
+recall_grapheme: 0.6590844976815828	 recall_vowel: 0.7308528079788191	 recall_consonant: 0.7454171255612255
+recall: 0.6986097322258022
+val epoch: 33 	val acc : 0.99%
+loss : 0.4930
+recall_grapheme:0.970825779964814	recall_vowel:0.9901596947557618	recall_consonant:0.9908553814128367
+recall: 0.9806666590245563
+Curr validation recall has increased from:  0.9782 to: 0.9807. Saving curr cycle checkpoint
+Global validation recall has increased from:  0.9782 to: 0.9807. Saving global checkpoint
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:34 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000490
+ train epoch : 34	acc : 0.73%
+loss : 4.3416
+recall_grapheme: 0.6358734598933216	 recall_vowel: 0.7129640370925489	 recall_consonant: 0.7283485676270502
+recall: 0.6782648811265605
+val epoch: 34 	val acc : 0.99%
+loss : 0.5523
+recall_grapheme:0.9711622959065571	recall_vowel:0.9907943916919034	recall_consonant:0.9912073231497168
+recall: 0.9810815766636836
+Curr validation recall has increased from:  0.9807 to: 0.9811. Saving curr cycle checkpoint
+Global validation recall has increased from:  0.9807 to: 0.9811. Saving global checkpoint
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:35 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000490
+ train epoch : 35	acc : 0.74%
+loss : 4.2905
+recall_grapheme: 0.6403005483642475	 recall_vowel: 0.718571060618159	 recall_consonant: 0.7289739147962476
+recall: 0.6820365180357253
+val epoch: 35 	val acc : 0.99%
+loss : 0.4824
+recall_grapheme:0.9661169035628266	recall_vowel:0.9891295749405087	recall_consonant:0.9900395126278689
+recall: 0.9778507236735077
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:36 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000490
+ train epoch : 36	acc : 0.74%
+loss : 4.2483
+recall_grapheme: 0.64805782352759	 recall_vowel: 0.7203691303887081	 recall_consonant: 0.7396175721372388
+recall: 0.6890255873952814
+val epoch: 36 	val acc : 0.99%
+loss : 0.6764
+recall_grapheme:0.9679296023660501	recall_vowel:0.990650528681355	recall_consonant:0.9927655532905649
+recall: 0.9798188216760048
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:37 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000490
+ train epoch : 37	acc : 0.74%
+loss : 4.2242
+recall_grapheme: 0.6507279264608171	 recall_vowel: 0.7253162386600741	 recall_consonant: 0.7414906398531672
+recall: 0.6920656828587187
+val epoch: 37 	val acc : 0.99%
+loss : 0.6840
+recall_grapheme:0.9678376259938958	recall_vowel:0.9901117937200047	recall_consonant:0.992405035850467
+recall: 0.9795480203895658
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:38 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000490
+ train epoch : 38	acc : 0.74%
+loss : 4.2964
+recall_grapheme: 0.6405442493795959	 recall_vowel: 0.7149976285284941	 recall_consonant: 0.7288379853627087
+recall: 0.6812310281625982
+val epoch: 38 	val acc : 0.99%
+loss : 0.6941
+recall_grapheme:0.9704990235186658	recall_vowel:0.9908790613355973	recall_consonant:0.9918875792204002
+recall: 0.9809411718983326
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:39 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000490
+ train epoch : 39	acc : 0.76%
+loss : 3.9319
+recall_grapheme: 0.6810321339208613	 recall_vowel: 0.7465744314209805	 recall_consonant: 0.7632701548768904
+recall: 0.717977213534898
+val epoch: 39 	val acc : 0.99%
+loss : 0.5723
+recall_grapheme:0.9691683858748846	recall_vowel:0.9894609822110315	recall_consonant:0.9858667310451114
+recall: 0.9784161212514781
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:40 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000343
+ train epoch : 40	acc : 0.75%
+loss : 4.1118
+recall_grapheme: 0.6559412358314869	 recall_vowel: 0.725914960393904	 recall_consonant: 0.7387649253954439
+recall: 0.69414058936308
+val epoch: 40 	val acc : 0.99%
+loss : 0.4795
+recall_grapheme:0.9759355511314894	recall_vowel:0.9923147269715815	recall_consonant:0.9945763246396283
+recall: 0.9846905384685477
+Curr validation recall has increased from:  0.9811 to: 0.9847. Saving curr cycle checkpoint
+Global validation recall has increased from:  0.9811 to: 0.9847. Saving global checkpoint
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:41 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000343
+ train epoch : 41	acc : 0.74%
+loss : 4.1460
+recall_grapheme: 0.649896165349609	 recall_vowel: 0.7245992787370015	 recall_consonant: 0.7402215992834396
+recall: 0.6911533021799151
+val epoch: 41 	val acc : 0.99%
+loss : 0.5576
+recall_grapheme:0.9748039102540027	recall_vowel:0.9924428484614904	recall_consonant:0.9913066394836281
+recall: 0.9833393271132814
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:42 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000343
+ train epoch : 42	acc : 0.76%
+loss : 3.9925
+recall_grapheme: 0.6697966897561697	 recall_vowel: 0.7350151162358167	 recall_consonant: 0.7505778856634691
+recall: 0.7062965953529059
+val epoch: 42 	val acc : 0.99%
+loss : 0.4122
+recall_grapheme:0.974729242698195	recall_vowel:0.991183928688188	recall_consonant:0.9930889851827248
+recall: 0.9834328498168257
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:43 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000343
+ train epoch : 43	acc : 0.74%
+loss : 4.1897
+recall_grapheme: 0.6446236381057004	 recall_vowel: 0.7180012244336875	 recall_consonant: 0.73732877639026
+recall: 0.686144319258838
+val epoch: 43 	val acc : 0.99%
+loss : 0.6967
+recall_grapheme:0.9716236114213224	recall_vowel:0.9908327032043448	recall_consonant:0.9928172195663784
+recall: 0.9817242864033422
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:44 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000343
+ train epoch : 44	acc : 0.74%
+loss : 4.1391
+recall_grapheme: 0.6558963130787642	 recall_vowel: 0.7242278627936204	 recall_consonant: 0.73655721390821
+recall: 0.69314442571484
+val epoch: 44 	val acc : 0.99%
+loss : 0.3537
+recall_grapheme:0.9759939273511375	recall_vowel:0.9930400515590532	recall_consonant:0.9933611466929816
+recall: 0.9845972632385773
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:45 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000343
+ train epoch : 45	acc : 0.75%
+loss : 4.0646
+recall_grapheme: 0.658581750599234	 recall_vowel: 0.7270496702718083	 recall_consonant: 0.7442919178177428
+recall: 0.6971262723220044
+val epoch: 45 	val acc : 0.99%
+loss : 0.5259
+recall_grapheme:0.9727442298690827	recall_vowel:0.9925624804826066	recall_consonant:0.9936714855545952
+recall: 0.9829306064438414
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:46 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000240
+ train epoch : 46	acc : 0.75%
+loss : 4.0470
+recall_grapheme: 0.6579920843464241	 recall_vowel: 0.7243467129683664	 recall_consonant: 0.740537036364982
+recall: 0.6952169795065487
+val epoch: 46 	val acc : 0.99%
+loss : 0.6895
+recall_grapheme:0.9742214497312776	recall_vowel:0.9924236309911921	recall_consonant:0.9943665239162213
+recall: 0.9838082635924923
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:47 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000240
+ train epoch : 47	acc : 0.75%
+loss : 4.0448
+recall_grapheme: 0.6603559323870485	 recall_vowel: 0.7245457737966967	 recall_consonant: 0.7410255111630261
+recall: 0.6965707874334551
+val epoch: 47 	val acc : 0.99%
+loss : 0.5653
+recall_grapheme:0.9748918234630053	recall_vowel:0.9915923473303112	recall_consonant:0.992463655537733
+recall: 0.9834599124485136
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:48 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000240
+ train epoch : 48	acc : 0.75%
+loss : 4.0284
+recall_grapheme: 0.6611221714163162	 recall_vowel: 0.7294845056426417	 recall_consonant: 0.7404693902231032
+recall: 0.6980495596745937
+val epoch: 48 	val acc : 0.99%
+loss : 0.4705
+recall_grapheme:0.9773082806257207	recall_vowel:0.992807551895545	recall_consonant:0.9929241608556979
+recall: 0.9850870685006713
+Curr validation recall has increased from:  0.9847 to: 0.9851. Saving curr cycle checkpoint
+Global validation recall has increased from:  0.9847 to: 0.9851. Saving global checkpoint
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:49 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000240
+ train epoch : 49	acc : 0.75%
+loss : 3.9953
+recall_grapheme: 0.6664365939931035	 recall_vowel: 0.7296467157151205	 recall_consonant: 0.7423380898854887
+recall: 0.7012144983967034
+val epoch: 49 	val acc : 0.99%
+loss : 0.6541
+recall_grapheme:0.9750285129026416	recall_vowel:0.9919374659492057	recall_consonant:0.9939300004057667
+recall: 0.9839811230400639
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:50 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000240
+ train epoch : 50	acc : 0.74%
+loss : 4.1006
+recall_grapheme: 0.6435975718593179	 recall_vowel: 0.7156114575638788	 recall_consonant: 0.7326134490344058
+recall: 0.6838550125792298
+val epoch: 50 	val acc : 0.99%
+loss : 0.5246
+recall_grapheme:0.9778084478371245	recall_vowel:0.9913709825645747	recall_consonant:0.9936429463564194
+recall: 0.9851577061488112
+Curr validation recall has increased from:  0.9851 to: 0.9852. Saving curr cycle checkpoint
+Global validation recall has increased from:  0.9851 to: 0.9852. Saving global checkpoint
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:51 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000240
+ train epoch : 51	acc : 0.74%
+loss : 4.0633
+recall_grapheme: 0.6385172086120866	 recall_vowel: 0.7136024039429779	 recall_consonant: 0.733351313511797
+recall: 0.6809970336697365
+val epoch: 51 	val acc : 0.99%
+loss : 0.6363
+recall_grapheme:0.9762624036212816	recall_vowel:0.9913100514709865	recall_consonant:0.994302814557993
+recall: 0.9845344183178857
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:52 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000240
+ train epoch : 52	acc : 0.76%
+loss : 3.8764
+recall_grapheme: 0.6772048205931097	 recall_vowel: 0.7412188747826364	 recall_consonant: 0.7529263626052773
+recall: 0.7121387196435326
+val epoch: 52 	val acc : 0.99%
+loss : 0.5738
+recall_grapheme:0.9770174627385189	recall_vowel:0.9929080642708629	recall_consonant:0.9949273127409601
+recall: 0.9854675756222152
+Curr validation recall has increased from:  0.9852 to: 0.9855. Saving curr cycle checkpoint
+Global validation recall has increased from:  0.9852 to: 0.9855. Saving global checkpoint
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:53 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000240
+ train epoch : 53	acc : 0.75%
+loss : 3.9982
+recall_grapheme: 0.6626412249510724	 recall_vowel: 0.7255528392419774	 recall_consonant: 0.7403347377579345
+recall: 0.6977925067255144
+val epoch: 53 	val acc : 0.99%
+loss : 0.6601
+recall_grapheme:0.9760812244857043	recall_vowel:0.9912513596183293	recall_consonant:0.9942375368782668
+recall: 0.9844128363670015
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:54 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000240
+ train epoch : 54	acc : 0.73%
+loss : 4.0630
+recall_grapheme: 0.6387453291789643	 recall_vowel: 0.7097207535475377	 recall_consonant: 0.7230337579308528
+recall: 0.6775612924590803
+val epoch: 54 	val acc : 0.99%
+loss : 0.4346
+recall_grapheme:0.9783947138013105	recall_vowel:0.9934268184794424	recall_consonant:0.9934476867673216
+recall: 0.9859159832123466
+Curr validation recall has increased from:  0.9855 to: 0.9859. Saving curr cycle checkpoint
+Global validation recall has increased from:  0.9855 to: 0.9859. Saving global checkpoint
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:55 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000240
+ train epoch : 55	acc : 0.75%
+loss : 3.9703
+recall_grapheme: 0.6564716224649787	 recall_vowel: 0.7221178999404545	 recall_consonant: 0.7343668169002262
+recall: 0.6923569904426591
+val epoch: 55 	val acc : 0.99%
+loss : 0.4934
+recall_grapheme:0.9742757167627006	recall_vowel:0.9923554293272863	recall_consonant:0.9927907260561221
+recall: 0.9834243972272021
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:56 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000240
+ train epoch : 56	acc : 0.77%
+loss : 3.6974
+recall_grapheme: 0.6846259456619189	 recall_vowel: 0.7463965246197801	 recall_consonant: 0.7616441429424441
+recall: 0.7193231397215162
+val epoch: 56 	val acc : 0.99%
+loss : 0.5612
+recall_grapheme:0.9784830265986568	recall_vowel:0.992386219434603	recall_consonant:0.9934899809125379
+recall: 0.985710563386114
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:57 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000240
+ train epoch : 57	acc : 0.75%
+loss : 3.9693
+recall_grapheme: 0.6639849879646282	 recall_vowel: 0.7292103057822239	 recall_consonant: 0.7438776842984869
+recall: 0.7002644915024919
+val epoch: 57 	val acc : 0.99%
+loss : 0.4607
+recall_grapheme:0.9781633741418246	recall_vowel:0.9929583371012274	recall_consonant:0.9935663788815942
+recall: 0.9857128660666173
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:58 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000240
+ train epoch : 58	acc : 0.75%
+loss : 3.8906
+recall_grapheme: 0.6659137739653197	 recall_vowel: 0.7308948848042433	 recall_consonant: 0.7455780367482788
+recall: 0.7020751173707905
+val epoch: 58 	val acc : 0.99%
+loss : 0.3076
+recall_grapheme:0.9803271565155369	recall_vowel:0.9929872833520876	recall_consonant:0.9947099813046049
+recall: 0.987087894421942
+Curr validation recall has increased from:  0.9859 to: 0.9871. Saving curr cycle checkpoint
+Global validation recall has increased from:  0.9859 to: 0.9871. Saving global checkpoint
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:59 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000240
+ train epoch : 59	acc : 0.76%
+loss : 3.8277
+recall_grapheme: 0.6780396299720967	 recall_vowel: 0.7393034262389853	 recall_consonant: 0.754088920223598
+recall: 0.7123679016016948
+val epoch: 59 	val acc : 0.99%
+loss : 0.4622
+recall_grapheme:0.9792392029990338	recall_vowel:0.9934718635769718	recall_consonant:0.9939793705136972
+recall: 0.9864824100221837
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:60 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000240
+ train epoch : 60	acc : 0.75%
+loss : 3.9280
+recall_grapheme: 0.6570655509782977	 recall_vowel: 0.7237803634696889	 recall_consonant: 0.7380379080449125
+recall: 0.6939873433677985
+val epoch: 60 	val acc : 0.99%
+loss : 0.4135
+recall_grapheme:0.9778226741094453	recall_vowel:0.9931251602433345	recall_consonant:0.9938482534117531
+recall: 0.985654690468495
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:61 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000240
+ train epoch : 61	acc : 0.75%
+loss : 3.9045
+recall_grapheme: 0.6602484249053424	 recall_vowel: 0.7256662922442978	 recall_consonant: 0.7378913179802207
+recall: 0.696013615008801
+val epoch: 61 	val acc : 0.99%
+loss : 0.5023
+recall_grapheme:0.9764081034734645	recall_vowel:0.9928182952809785	recall_consonant:0.9928992656046234
+recall: 0.9846334419581326
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:62 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000240
+ train epoch : 62	acc : 0.75%
+loss : 3.9511
+recall_grapheme: 0.6645454673859886	 recall_vowel: 0.726468196034601	 recall_consonant: 0.7440757043307867
+recall: 0.699908708784341
+val epoch: 62 	val acc : 0.99%
+loss : 0.4679
+recall_grapheme:0.9744131655430541	recall_vowel:0.9923905532033417	recall_consonant:0.990898051587323
+recall: 0.9830287339691928
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:63 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000240
+ train epoch : 63	acc : 0.75%
+loss : 3.9135
+recall_grapheme: 0.6653674185169999	 recall_vowel: 0.7290912165221797	 recall_consonant: 0.744045507008869
+recall: 0.7009678901412625
+val epoch: 63 	val acc : 0.99%
+loss : 0.4434
+recall_grapheme:0.9772061177294782	recall_vowel:0.9932887733351305	recall_consonant:0.9947946417095402
+recall: 0.9856239126259063
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:64 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000168
+ train epoch : 64	acc : 0.76%
+loss : 3.8098
+recall_grapheme: 0.6824548388962112	 recall_vowel: 0.7402887465493475	 recall_consonant: 0.7544004707346281
+recall: 0.7148997237690998
+val epoch: 64 	val acc : 0.99%
+loss : 0.4454
+recall_grapheme:0.9799095134885246	recall_vowel:0.9927145601655414	recall_consonant:0.9952996585392998
+recall: 0.9869583114204727
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:65 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000168
+ train epoch : 65	acc : 0.75%
+loss : 3.8018
+recall_grapheme: 0.6666150518909112	 recall_vowel: 0.731263475016121	 recall_consonant: 0.7452538843153628
+recall: 0.7024368657783265
+val epoch: 65 	val acc : 0.99%
+loss : 0.3378
+recall_grapheme:0.9801279963317238	recall_vowel:0.9939202767652352	recall_consonant:0.9955376277636911
+recall: 0.9874284742980934
+Curr validation recall has increased from:  0.9871 to: 0.9874. Saving curr cycle checkpoint
+Global validation recall has increased from:  0.9871 to: 0.9874. Saving global checkpoint
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:66 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000168
+ train epoch : 66	acc : 0.74%
+loss : 3.9256
+recall_grapheme: 0.649062309546613	 recall_vowel: 0.7183571683942022	 recall_consonant: 0.7346285483619965
+recall: 0.6877775839623556
+val epoch: 66 	val acc : 0.99%
+loss : 0.3212
+recall_grapheme:0.9794428071508839	recall_vowel:0.9935941863681508	recall_consonant:0.9936271830297232
+recall: 0.9865267459249109
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:67 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000168
+ train epoch : 67	acc : 0.76%
+loss : 3.7102
+recall_grapheme: 0.6798540548587755	 recall_vowel: 0.7428647360063646	 recall_consonant: 0.7567224582377599
+recall: 0.7148238259904186
+val epoch: 67 	val acc : 0.99%
+loss : 0.4109
+recall_grapheme:0.9804991498658753	recall_vowel:0.9939897742874744	recall_consonant:0.9939024060976093
+recall: 0.9872226200292086
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:68 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000168
+ train epoch : 68	acc : 0.75%
+loss : 3.9295
+recall_grapheme: 0.6576931952715638	 recall_vowel: 0.7229137616227086	 recall_consonant: 0.7383662264199191
+recall: 0.6941665946464389
+val epoch: 68 	val acc : 0.99%
+loss : 0.5187
+recall_grapheme:0.9799745514680483	recall_vowel:0.9936883034773274	recall_consonant:0.9951583634074924
+recall: 0.9871989424552295
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:69 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000168
+ train epoch : 69	acc : 0.75%
+loss : 3.9117
+recall_grapheme: 0.666486165481167	 recall_vowel: 0.7277587901414931	 recall_consonant: 0.7414944430853085
+recall: 0.7005563910472835
+val epoch: 69 	val acc : 0.99%
+loss : 0.5692
+recall_grapheme:0.9783679681015102	recall_vowel:0.9939068866144432	recall_consonant:0.9921781358863383
+recall: 0.9857052396759499
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:70 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000168
+ train epoch : 70	acc : 0.76%
+loss : 3.8323
+recall_grapheme: 0.6779879509326934	 recall_vowel: 0.7368275732902098	 recall_consonant: 0.7514644262573934
+recall: 0.7110669753532475
+val epoch: 70 	val acc : 0.99%
+loss : 0.4720
+recall_grapheme:0.9814255975025951	recall_vowel:0.9943022369284512	recall_consonant:0.9947516919778139
+recall: 0.9879762809778637
+Curr validation recall has increased from:  0.9874 to: 0.9880. Saving curr cycle checkpoint
+Global validation recall has increased from:  0.9874 to: 0.9880. Saving global checkpoint
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:71 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000168
+ train epoch : 71	acc : 0.74%
+loss : 3.9849
+recall_grapheme: 0.6551372639588104	 recall_vowel: 0.7210211519403571	 recall_consonant: 0.7361609611812642
+recall: 0.691864160259811
+val epoch: 71 	val acc : 0.99%
+loss : 0.4339
+recall_grapheme:0.9818541110174874	recall_vowel:0.9940042157857569	recall_consonant:0.9952188652116455
+recall: 0.9882328257580943
+Curr validation recall has increased from:  0.9880 to: 0.9882. Saving curr cycle checkpoint
+Global validation recall has increased from:  0.9880 to: 0.9882. Saving global checkpoint
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:72 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000168
+ train epoch : 72	acc : 0.77%
+loss : 3.6991
+recall_grapheme: 0.6864073665925462	 recall_vowel: 0.7469281321548672	 recall_consonant: 0.7610833697014651
+recall: 0.7202065587603564
+val epoch: 72 	val acc : 0.99%
+loss : 0.5476
+recall_grapheme:0.980464938660226	recall_vowel:0.9944905327880424	recall_consonant:0.9950380873323525
+recall: 0.9876146243602117
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:73 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000168
+ train epoch : 73	acc : 0.76%
+loss : 3.6977
+recall_grapheme: 0.6828564836722556	 recall_vowel: 0.7432664157897386	 recall_consonant: 0.7570525281384243
+recall: 0.7165079778181686
+val epoch: 73 	val acc : 0.99%
+loss : 0.4123
+recall_grapheme:0.9811536650567118	recall_vowel:0.9933863923706338	recall_consonant:0.9948613253941112
+recall: 0.9876387619695414
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:74 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000168
+ train epoch : 74	acc : 0.76%
+loss : 3.7793
+recall_grapheme: 0.6812255329418331	 recall_vowel: 0.7419298426813183	 recall_consonant: 0.7589649135566876
+recall: 0.715836455530418
+val epoch: 74 	val acc : 0.99%
+loss : 0.3583
+recall_grapheme:0.9806805921960897	recall_vowel:0.9950129303606089	recall_consonant:0.9951074868504186
+recall: 0.9878704004008019
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:75 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000168
+ train epoch : 75	acc : 0.75%
+loss : 3.8352
+recall_grapheme: 0.6668514821073548	 recall_vowel: 0.7287608326717034	 recall_consonant: 0.7473543722250179
+recall: 0.7024545422778578
+val epoch: 75 	val acc : 0.99%
+loss : 0.4708
+recall_grapheme:0.9794061028356228	recall_vowel:0.9939873589498329	recall_consonant:0.9937973461717351
+recall: 0.9866492276982031
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:76 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000168
+ train epoch : 76	acc : 0.76%
+loss : 3.8392
+recall_grapheme: 0.6728365347344182	 recall_vowel: 0.7338937739957839	 recall_consonant: 0.7471742300345338
+recall: 0.7066852683747884
+val epoch: 76 	val acc : 0.99%
+loss : 0.4532
+recall_grapheme:0.9792390279808532	recall_vowel:0.9935620060306283	recall_consonant:0.9930466096123453
+recall: 0.9862716679011699
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:77 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000118
+ train epoch : 77	acc : 0.75%
+loss : 3.7332
+recall_grapheme: 0.6685946345791306	 recall_vowel: 0.7301019900822089	 recall_consonant: 0.7438307017802502
+recall: 0.7027804902551807
+val epoch: 77 	val acc : 0.99%
+loss : 0.3500
+recall_grapheme:0.9821119027931612	recall_vowel:0.9945009386539603	recall_consonant:0.9954664320518065
+recall: 0.9885477940730222
+Curr validation recall has increased from:  0.9882 to: 0.9885. Saving curr cycle checkpoint
+Global validation recall has increased from:  0.9882 to: 0.9885. Saving global checkpoint
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:78 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000118
+ train epoch : 78	acc : 0.75%
+loss : 3.7990
+recall_grapheme: 0.6684340552096437	 recall_vowel: 0.7331015232727836	 recall_consonant: 0.7495244938393217
+recall: 0.7048735318828485
+val epoch: 78 	val acc : 0.99%
+loss : 0.3011
+recall_grapheme:0.982337364733104	recall_vowel:0.9943800395986546	recall_consonant:0.994532587389744
+recall: 0.9883968391136517
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:79 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000118
+ train epoch : 79	acc : 0.75%
+loss : 3.9032
+recall_grapheme: 0.6626518033973936	 recall_vowel: 0.7208614083117683	 recall_consonant: 0.7356557085780846
+recall: 0.6954551809211597
+val epoch: 79 	val acc : 0.99%
+loss : 0.3635
+recall_grapheme:0.9817344578184583	recall_vowel:0.9934737603536394	recall_consonant:0.9947655340534531
+recall: 0.987927052511002
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:80 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000118
+ train epoch : 80	acc : 0.78%
+loss : 3.5660
+recall_grapheme: 0.700502802131573	 recall_vowel: 0.7555466454567382	 recall_consonant: 0.7664166941200135
+recall: 0.7307422359599752
+val epoch: 80 	val acc : 0.99%
+loss : 0.3623
+recall_grapheme:0.9829967156049655	recall_vowel:0.9948028844018086	recall_consonant:0.9952735300655424
+recall: 0.9890174614193202
+Curr validation recall has increased from:  0.9885 to: 0.9890. Saving curr cycle checkpoint
+Global validation recall has increased from:  0.9885 to: 0.9890. Saving global checkpoint
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:81 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000118
+ train epoch : 81	acc : 0.75%
+loss : 3.7611
+recall_grapheme: 0.664557430810194	 recall_vowel: 0.7308958606349966	 recall_consonant: 0.7452011078736714
+recall: 0.7013029575322637
+val epoch: 81 	val acc : 0.99%
+loss : 0.3730
+recall_grapheme:0.9819765683260041	recall_vowel:0.9939789077707368	recall_consonant:0.9952188364483361
+recall: 0.9882877202177708
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:82 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000118
+ train epoch : 82	acc : 0.77%
+loss : 3.5655
+recall_grapheme: 0.6975900733459987	 recall_vowel: 0.7523205902997516	 recall_consonant: 0.7675888507654604
+recall: 0.7287723969393022
+val epoch: 82 	val acc : 0.99%
+loss : 0.5508
+recall_grapheme:0.9806955172258879	recall_vowel:0.9943119956122598	recall_consonant:0.9953803581155702
+recall: 0.9877708470449019
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:83 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000118
+ train epoch : 83	acc : 0.76%
+loss : 3.6468
+recall_grapheme: 0.6826591512158605	 recall_vowel: 0.7397761026458375	 recall_consonant: 0.7527618940995222
+recall: 0.7144640747942699
+val epoch: 83 	val acc : 0.99%
+loss : 0.3919
+recall_grapheme:0.9813841550889225	recall_vowel:0.9940010316008153	recall_consonant:0.9956710149253849
+recall: 0.9881100891760117
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:84 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000118
+ train epoch : 84	acc : 0.74%
+loss : 3.8641
+recall_grapheme: 0.6560348545681535	 recall_vowel: 0.7199366355150534	 recall_consonant: 0.7355755843441362
+recall: 0.6918954822488741
+val epoch: 84 	val acc : 0.99%
+loss : 0.2802
+recall_grapheme:0.9823707680895886	recall_vowel:0.9933425285408025	recall_consonant:0.9951457224171869
+recall: 0.9883074467842915
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:85 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000118
+ train epoch : 85	acc : 0.77%
+loss : 3.7087
+recall_grapheme: 0.6925554575857449	 recall_vowel: 0.7453289069960818	 recall_consonant: 0.7576011984174443
+recall: 0.7220102551462532
+val epoch: 85 	val acc : 0.99%
+loss : 0.2984
+recall_grapheme:0.982354533427795	recall_vowel:0.9937880649413415	recall_consonant:0.9949751255602983
+recall: 0.9883680643393075
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:86 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000082
+ train epoch : 86	acc : 0.77%
+loss : 3.6708
+recall_grapheme: 0.6870676268377254	 recall_vowel: 0.7448178313392249	 recall_consonant: 0.7574979351081498
+recall: 0.7191127550307065
+val epoch: 86 	val acc : 0.99%
+loss : 0.3321
+recall_grapheme:0.982023458954772	recall_vowel:0.993962793396845	recall_consonant:0.9957109412090781
+recall: 0.9884301631288668
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:87 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000082
+ train epoch : 87	acc : 0.77%
+loss : 3.5846
+recall_grapheme: 0.6852929549643938	 recall_vowel: 0.7425094661074763	 recall_consonant: 0.7593198583979207
+recall: 0.7181038086085462
+val epoch: 87 	val acc : 0.99%
+loss : 0.3936
+recall_grapheme:0.9819414193884937	recall_vowel:0.9948110062050062	recall_consonant:0.995811086221892
+recall: 0.988626232800971
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:88 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000082
+ train epoch : 88	acc : 0.75%
+loss : 3.7419
+recall_grapheme: 0.6677249647324196	 recall_vowel: 0.7315851505618384	 recall_consonant: 0.7466806630906846
+recall: 0.7034289357793403
+val epoch: 88 	val acc : 0.99%
+loss : 0.3115
+recall_grapheme:0.9833121911756842	recall_vowel:0.9941504186132324	recall_consonant:0.9947090146668291
+recall: 0.9888709539078572
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:89 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000082
+ train epoch : 89	acc : 0.76%
+loss : 3.6563
+recall_grapheme: 0.6783011572022795	 recall_vowel: 0.7371287534101634	 recall_consonant: 0.7493361333731354
+recall: 0.710766800296964
+val epoch: 89 	val acc : 0.99%
+loss : 0.3083
+recall_grapheme:0.9810964184571445	recall_vowel:0.9943450075600033	recall_consonant:0.9952763730690626
+recall: 0.9879535543858389
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:90 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000082
+ train epoch : 90	acc : 0.77%
+loss : 3.5232
+recall_grapheme: 0.696199273801821	 recall_vowel: 0.7515703028495783	 recall_consonant: 0.7648711215213884
+recall: 0.7272099929936525
+val epoch: 90 	val acc : 0.99%
+loss : 0.3398
+recall_grapheme:0.9823642753204626	recall_vowel:0.9938543709692657	recall_consonant:0.9952198659098968
+recall: 0.9884506968800226
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:91 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000058
+ train epoch : 91	acc : 0.76%
+loss : 3.6911
+recall_grapheme: 0.679178065478543	 recall_vowel: 0.7345824329533898	 recall_consonant: 0.751048297653407
+recall: 0.7109967153909708
+val epoch: 91 	val acc : 0.99%
+loss : 0.6782
+recall_grapheme:0.9807686616654144	recall_vowel:0.9940574079591128	recall_consonant:0.9949431759430485
+recall: 0.9876344768082471
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:92 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000058
+ train epoch : 92	acc : 0.76%
+loss : 3.5901
+recall_grapheme: 0.6822006385202883	 recall_vowel: 0.7404174378131527	 recall_consonant: 0.7546219354637088
+recall: 0.7148601625793594
+val epoch: 92 	val acc : 0.99%
+loss : 0.3178
+recall_grapheme:0.9836840994433163	recall_vowel:0.9948938586464076	recall_consonant:0.995725815656577
+recall: 0.9894969682974049
+Curr validation recall has increased from:  0.9890 to: 0.9895. Saving curr cycle checkpoint
+Global validation recall has increased from:  0.9890 to: 0.9895. Saving global checkpoint
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:93 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000058
+ train epoch : 93	acc : 0.77%
+loss : 3.5071
+recall_grapheme: 0.6985706349979234	 recall_vowel: 0.7505762867333824	 recall_consonant: 0.7640358436287167
+recall: 0.727938350089486
+val epoch: 93 	val acc : 0.99%
+loss : 0.3469
+recall_grapheme:0.9831633484081201	recall_vowel:0.994478138322432	recall_consonant:0.9956454145006904
+recall: 0.9891125624098409
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:94 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000058
+ train epoch : 94	acc : 0.75%
+loss : 3.7322
+recall_grapheme: 0.6700660913642323	 recall_vowel: 0.7300809523528522	 recall_consonant: 0.7460013358383035
+recall: 0.7040536177299044
+val epoch: 94 	val acc : 0.99%
+loss : 0.2799
+recall_grapheme:0.983534641361687	recall_vowel:0.9943158035081299	recall_consonant:0.9954017065550947
+recall: 0.9891966981966496
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:95 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000058
+ train epoch : 95	acc : 0.75%
+loss : 3.8142
+recall_grapheme: 0.6706826146005611	 recall_vowel: 0.7296932945482495	 recall_consonant: 0.7457339286880281
+recall: 0.7041981131093502
+val epoch: 95 	val acc : 0.99%
+loss : 0.3569
+recall_grapheme:0.9840169576575565	recall_vowel:0.9942303394922409	recall_consonant:0.9960773181657566
+recall: 0.9895853932432779
+Curr validation recall has increased from:  0.9895 to: 0.9896. Saving curr cycle checkpoint
+Global validation recall has increased from:  0.9895 to: 0.9896. Saving global checkpoint
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:96 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000058
+ train epoch : 96	acc : 0.78%
+loss : 3.4292
+recall_grapheme: 0.7088405187439616	 recall_vowel: 0.7607368717718112	 recall_consonant: 0.7743761057671988
+recall: 0.7381985037567335
+val epoch: 96 	val acc : 0.99%
+loss : 0.3138
+recall_grapheme:0.9834146266094578	recall_vowel:0.9941424702773366	recall_consonant:0.9958913178834788
+recall: 0.9892157603449325
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:97 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000058
+ train epoch : 97	acc : 0.76%
+loss : 3.6456
+recall_grapheme: 0.6832262118971913	 recall_vowel: 0.7386143058973257	 recall_consonant: 0.7551593908182164
+recall: 0.7150565301274814
+val epoch: 97 	val acc : 0.99%
+loss : 0.3449
+recall_grapheme:0.9842735174398397	recall_vowel:0.9946172926184735	recall_consonant:0.9957782074337342
+recall: 0.9897356337329719
+Curr validation recall has increased from:  0.9896 to: 0.9897. Saving curr cycle checkpoint
+Global validation recall has increased from:  0.9896 to: 0.9897. Saving global checkpoint
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:98 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000058
+ train epoch : 98	acc : 0.76%
+loss : 3.6901
+recall_grapheme: 0.6811922352621727	 recall_vowel: 0.7385026564988562	 recall_consonant: 0.7503589347098547
+recall: 0.7128115154332635
+val epoch: 98 	val acc : 0.99%
+loss : 0.2477
+recall_grapheme:0.9845033152125479	recall_vowel:0.9939949699528129	recall_consonant:0.9947523053535882
+recall: 0.9894384764328744
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:99 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000058
+ train epoch : 99	acc : 0.77%
+loss : 3.5937
+recall_grapheme: 0.6935650702916212	 recall_vowel: 0.7480692183097198	 recall_consonant: 0.761699000968785
+recall: 0.7242245899654376
+val epoch: 99 	val acc : 0.99%
+loss : 0.2753
+recall_grapheme:0.9843233162301767	recall_vowel:0.994703743693327	recall_consonant:0.9946990035102806
+recall: 0.9895123449159904
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:100 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000058
+ train epoch : 100	acc : 0.75%
+loss : 3.7349
+recall_grapheme: 0.6678590069634074	 recall_vowel: 0.7266686788615503	 recall_consonant: 0.7432849525480647
+recall: 0.7014179113341072
+val epoch: 100 	val acc : 0.99%
+loss : 0.3426
+recall_grapheme:0.9837968347380219	recall_vowel:0.9940232641166332	recall_consonant:0.9950575129520296
+recall: 0.9891686116361771
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:101 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000058
+ train epoch : 101	acc : 0.76%
+loss : 3.6746
+recall_grapheme: 0.6801359466010837	 recall_vowel: 0.7379855768238996	 recall_consonant: 0.7543965348677626
+recall: 0.7131635012234574
+val epoch: 101 	val acc : 0.99%
+loss : 0.3892
+recall_grapheme:0.9820189050093686	recall_vowel:0.9947033836456044	recall_consonant:0.9950802415920663
+recall: 0.9884553588141022
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:102 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000058
+ train epoch : 102	acc : 0.76%
+loss : 3.7857
+recall_grapheme: 0.6741741577857084	 recall_vowel: 0.7347354686493575	 recall_consonant: 0.7471985171946037
+recall: 0.707570575353844
+val epoch: 102 	val acc : 0.99%
+loss : 0.3294
+recall_grapheme:0.983206458036737	recall_vowel:0.9949985291394462	recall_consonant:0.9954211254672478
+recall: 0.9892081426700422
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:103 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000040
+ train epoch : 103	acc : 0.76%
+loss : 3.6935
+recall_grapheme: 0.6831307965896701	 recall_vowel: 0.7389935722163563	 recall_consonant: 0.7540926289931337
+recall: 0.7148369485972075
+val epoch: 103 	val acc : 0.99%
+loss : 0.3788
+recall_grapheme:0.9824994482429095	recall_vowel:0.9941303078003124	recall_consonant:0.9955780529330319
+recall: 0.988676814304791
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:104 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000040
+ train epoch : 104	acc : 0.75%
+loss : 3.7856
+recall_grapheme: 0.6722039681759142	 recall_vowel: 0.7304666429358375	 recall_consonant: 0.744478373420919
+recall: 0.7048382381771467
+val epoch: 104 	val acc : 0.99%
+loss : 0.3557
+recall_grapheme:0.982051283522965	recall_vowel:0.9946340705424285	recall_consonant:0.9959192427388843
+recall: 0.9886639700818106
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:105 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000040
+ train epoch : 105	acc : 0.76%
+loss : 3.5917
+recall_grapheme: 0.681457736950503	 recall_vowel: 0.7387175406371895	 recall_consonant: 0.7552436087208281
+recall: 0.7142191558147553
+val epoch: 105 	val acc : 0.99%
+loss : 0.3819
+recall_grapheme:0.9822462069221324	recall_vowel:0.9937960645649073	recall_consonant:0.9959486514326713
+recall: 0.9885592824604607
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:106 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000040
+ train epoch : 106	acc : 0.76%
+loss : 3.6808
+recall_grapheme: 0.6773686665918809	 recall_vowel: 0.7346826967091817	 recall_consonant: 0.7488699830538209
+recall: 0.7095725032366906
+val epoch: 106 	val acc : 0.99%
+loss : 0.2647
+recall_grapheme:0.9832922453802407	recall_vowel:0.9941857481446019	recall_consonant:0.9949382871411623
+recall: 0.9889271315115613
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:107 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000040
+ train epoch : 107	acc : 0.77%
+loss : 3.6108
+recall_grapheme: 0.6967003732251117	 recall_vowel: 0.747309785470668	 recall_consonant: 0.7628709627143919
+recall: 0.7258953736588213
+val epoch: 107 	val acc : 0.99%
+loss : 0.3363
+recall_grapheme:0.9829295903824321	recall_vowel:0.9941795544775054	recall_consonant:0.9934998622158266
+recall: 0.9883846493645495
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:108 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000028
+ train epoch : 108	acc : 0.76%
+loss : 3.6433
+recall_grapheme: 0.6753269631970846	 recall_vowel: 0.7351316813606205	 recall_consonant: 0.7509848382851998
+recall: 0.7091926115099969
+val epoch: 108 	val acc : 0.99%
+loss : 0.3241
+recall_grapheme:0.9834950888079388	recall_vowel:0.9939164730759963	recall_consonant:0.9954945824983699
+recall: 0.9891003082975612
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:109 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000028
+ train epoch : 109	acc : 0.77%
+loss : 3.5775
+recall_grapheme: 0.6894360106106181	 recall_vowel: 0.7432463843593633	 recall_consonant: 0.7569424055696302
+recall: 0.7197652027875574
+val epoch: 109 	val acc : 0.99%
+loss : 0.3108
+recall_grapheme:0.9838616125591629	recall_vowel:0.9945264823719535	recall_consonant:0.995419209565144
+recall: 0.989417229263856
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:110 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000028
+ train epoch : 110	acc : 0.75%
+loss : 3.7620
+recall_grapheme: 0.6736686785749417	 recall_vowel: 0.7315135875505583	 recall_consonant: 0.7460068442301958
+recall: 0.7062144472326588
+val epoch: 110 	val acc : 0.99%
+loss : 0.3764
+recall_grapheme:0.9829905016666026	recall_vowel:0.9944576121338997	recall_consonant:0.9954578594395044
+recall: 0.9889741187266528
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:111 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000028
+ train epoch : 111	acc : 0.75%
+loss : 3.7274
+recall_grapheme: 0.6634854762844602	 recall_vowel: 0.7264738152174213	 recall_consonant: 0.7417170418950869
+recall: 0.6987904524203569
+val epoch: 111 	val acc : 0.99%
+loss : 0.3676
+recall_grapheme:0.9825375977207674	recall_vowel:0.9935374936179033	recall_consonant:0.9951339797066533
+recall: 0.9884366671915233
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:112 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000028
+ train epoch : 112	acc : 0.77%
+loss : 3.6477
+recall_grapheme: 0.6924515942515486	 recall_vowel: 0.7460347776154679	 recall_consonant: 0.7594502382599417
+recall: 0.7225970510946265
+val epoch: 112 	val acc : 0.99%
+loss : 0.3721
+recall_grapheme:0.9839851546491599	recall_vowel:0.9941086917682538	recall_consonant:0.9961221809344435
+recall: 0.9895502955002544
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:113 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000020
+ train epoch : 113	acc : 0.76%
+loss : 3.6766
+recall_grapheme: 0.677423937153675	 recall_vowel: 0.7352681633240689	 recall_consonant: 0.7460927477030228
+recall: 0.7090521963336103
+val epoch: 113 	val acc : 0.99%
+loss : 0.2235
+recall_grapheme:0.9849749749878	recall_vowel:0.9943018951408445	recall_consonant:0.9954334538558225
+recall: 0.9899213247430672
+Curr validation recall has increased from:  0.9897 to: 0.9899. Saving curr cycle checkpoint
+Global validation recall has increased from:  0.9897 to: 0.9899. Saving global checkpoint
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:114 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000020
+ train epoch : 114	acc : 0.76%
+loss : 3.5094
+recall_grapheme: 0.6855123477610653	 recall_vowel: 0.7423503923307593	 recall_consonant: 0.7557437639521304
+recall: 0.7172797129512555
+val epoch: 114 	val acc : 0.99%
+loss : 0.4004
+recall_grapheme:0.9832043846670708	recall_vowel:0.9943368177675675	recall_consonant:0.995330513706636
+recall: 0.9890190252020865
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:115 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000020
+ train epoch : 115	acc : 0.77%
+loss : 3.6676
+recall_grapheme: 0.6894502037976126	 recall_vowel: 0.7417269136153064	 recall_consonant: 0.752105189474358
+recall: 0.7181831276712224
+val epoch: 115 	val acc : 0.99%
+loss : 0.3378
+recall_grapheme:0.9839249148722029	recall_vowel:0.9939498379757882	recall_consonant:0.9956664564902123
+recall: 0.9893665310526016
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:116 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000020
+ train epoch : 116	acc : 0.77%
+loss : 3.5650
+recall_grapheme: 0.698081999833227	 recall_vowel: 0.7523083909893091	 recall_consonant: 0.7625486235545731
+recall: 0.7277552535525839
+val epoch: 116 	val acc : 0.99%
+loss : 0.4050
+recall_grapheme:0.9835560753704595	recall_vowel:0.9944337426491365	recall_consonant:0.9956763762458266
+recall: 0.9893055674089708
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:117 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000020
+ train epoch : 117	acc : 0.76%
+loss : 3.4994
+recall_grapheme: 0.6850601230051665	 recall_vowel: 0.7420722035512307	 recall_consonant: 0.7548490028518362
+recall: 0.7167603631033497
+val epoch: 117 	val acc : 0.99%
+loss : 0.2940
+recall_grapheme:0.984105529149809	recall_vowel:0.9943048831780247	recall_consonant:0.9956489631726398
+recall: 0.9895412261625708
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:118 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000020
+ train epoch : 118	acc : 0.76%
+loss : 3.5472
+recall_grapheme: 0.6812363097985547	 recall_vowel: 0.7385570239696433	 recall_consonant: 0.7528658477265158
+recall: 0.7134738728233173
+val epoch: 118 	val acc : 0.99%
+loss : 0.3718
+recall_grapheme:0.9834362200945513	recall_vowel:0.994523593969104	recall_consonant:0.9956851452937158
+recall: 0.989270294862981
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:119 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000014
+ train epoch : 119	acc : 0.76%
+loss : 3.6408
+recall_grapheme: 0.6804219912088352	 recall_vowel: 0.7382255691730344	 recall_consonant: 0.7500972950879663
+recall: 0.7122917116696678
+val epoch: 119 	val acc : 0.99%
+loss : 0.3610
+recall_grapheme:0.9838282637098925	recall_vowel:0.9943856537232104	recall_consonant:0.9953795618857639
+recall: 0.9893554357571901
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:120 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000014
+ train epoch : 120	acc : 0.76%
+loss : 3.6644
+recall_grapheme: 0.6775234397825999	 recall_vowel: 0.734748904125161	 recall_consonant: 0.7489641673930675
+recall: 0.7096899877708572
+val epoch: 120 	val acc : 0.99%
+loss : 0.2789
+recall_grapheme:0.9839947136984846	recall_vowel:0.9939761518141376	recall_consonant:0.9956568556944988
+recall: 0.9894056087264012
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:121 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000014
+ train epoch : 121	acc : 0.77%
+loss : 3.4556
+recall_grapheme: 0.6945264057600702	 recall_vowel: 0.7496486457766065	 recall_consonant: 0.7632731472928438
+recall: 0.7254936511473975
+val epoch: 121 	val acc : 0.99%
+loss : 0.2884
+recall_grapheme:0.9840141574049898	recall_vowel:0.9945624509488407	recall_consonant:0.9956359061307847
+recall: 0.9895566679724015
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:122 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000014
+ train epoch : 122	acc : 0.76%
+loss : 3.7490
+recall_grapheme: 0.6754337979189032	 recall_vowel: 0.7309335628279092	 recall_consonant: 0.7460362014226506
+recall: 0.7069593400220912
+val epoch: 122 	val acc : 0.99%
+loss : 0.5444
+recall_grapheme:0.9799473002012671	recall_vowel:0.9946304842377167	recall_consonant:0.9937963257667021
+recall: 0.9870803526017383
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:123 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000014
+ train epoch : 123	acc : 0.77%
+loss : 3.5864
+recall_grapheme: 0.6901306174854507	 recall_vowel: 0.7446117717981247	 recall_consonant: 0.7598371201864742
+recall: 0.7211775317388751
+val epoch: 123 	val acc : 0.99%
+loss : 0.3762
+recall_grapheme:0.9836940721337438	recall_vowel:0.9947634155592604	recall_consonant:0.995590869809608
+recall: 0.989435607409089
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:124 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000010
+ train epoch : 124	acc : 0.77%
+loss : 3.4911
+recall_grapheme: 0.7013646203719544	 recall_vowel: 0.7532505408778581	 recall_consonant: 0.7660051132262794
+recall: 0.7304962237120114
+val epoch: 124 	val acc : 0.99%
+loss : 0.3744
+recall_grapheme:0.9832164790033172	recall_vowel:0.9949144662415738	recall_consonant:0.9959022828740655
+recall: 0.9893124267805685
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:125 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000010
+ train epoch : 125	acc : 0.76%
+loss : 3.6611
+recall_grapheme: 0.6838886780098856	 recall_vowel: 0.7388483424780113	 recall_consonant: 0.752491452336306
+recall: 0.7147792877085216
+val epoch: 125 	val acc : 0.99%
+loss : 0.3002
+recall_grapheme:0.9841665816586402	recall_vowel:0.9945032125499147	recall_consonant:0.9955010276921872
+recall: 0.9895843508898458
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:126 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000010
+ train epoch : 126	acc : 0.77%
+loss : 3.5127
+recall_grapheme: 0.6938704890992768	 recall_vowel: 0.7481719119047654	 recall_consonant: 0.7596712334271231
+recall: 0.7238960308826107
+val epoch: 126 	val acc : 0.99%
+loss : 0.2553
+recall_grapheme:0.9842095961596068	recall_vowel:0.9945013956321042	recall_consonant:0.9953880221708187
+recall: 0.9895771525305341
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:127 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000010
+ train epoch : 127	acc : 0.78%
+loss : 3.3525
+recall_grapheme: 0.7060820023700167	 recall_vowel: 0.7591366407193926	 recall_consonant: 0.7691962091082852
+recall: 0.7351242136419277
+val epoch: 127 	val acc : 0.99%
+loss : 0.3278
+recall_grapheme:0.9835876496746697	recall_vowel:0.9946839768140182	recall_consonant:0.9957589197945775
+recall: 0.9894045489894842
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:128 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000010
+ train epoch : 128	acc : 0.77%
+loss : 3.4973
+recall_grapheme: 0.6931298819953742	 recall_vowel: 0.7469474281758244	 recall_consonant: 0.7572750720669418
+recall: 0.7226205660583783
+val epoch: 128 	val acc : 0.99%
+loss : 0.4245
+recall_grapheme:0.9827181775836948	recall_vowel:0.994704885913789	recall_consonant:0.9956459424197289
+recall: 0.9889467958752267
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:129 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000007
+ train epoch : 129	acc : 0.77%
+loss : 3.5479
+recall_grapheme: 0.6895574961678662	 recall_vowel: 0.7452073783803008	 recall_consonant: 0.7591384105334769
+recall: 0.7208651953123776
+val epoch: 129 	val acc : 0.99%
+loss : 0.3141
+recall_grapheme:0.9834907648871712	recall_vowel:0.9944218258707851	recall_consonant:0.9954008063857493
+recall: 0.989201040507719
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:130 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000007
+ train epoch : 130	acc : 0.77%
+loss : 3.5128
+recall_grapheme: 0.6907880839265045	 recall_vowel: 0.7453383796697449	 recall_consonant: 0.7594690145403866
+recall: 0.7215958905157844
+val epoch: 130 	val acc : 0.99%
+loss : 0.2688
+recall_grapheme:0.9845297761510843	recall_vowel:0.9946802398363449	recall_consonant:0.9960915494369816
+recall: 0.9899578353938737
+Curr validation recall has increased from:  0.9899 to: 0.9900. Saving curr cycle checkpoint
+Global validation recall has increased from:  0.9899 to: 0.9900. Saving global checkpoint
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:131 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000007
+ train epoch : 131	acc : 0.76%
+loss : 3.6771
+recall_grapheme: 0.6773304336742436	 recall_vowel: 0.7340799736227257	 recall_consonant: 0.7511312282737409
+recall: 0.7099680173112383
+val epoch: 131 	val acc : 0.99%
+loss : 0.3922
+recall_grapheme:0.9822741475177615	recall_vowel:0.9944353314627143	recall_consonant:0.9958131591444627
+recall: 0.9886991964106753
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:132 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000007
+ train epoch : 132	acc : 0.76%
+loss : 3.5483
+recall_grapheme: 0.6818789776285529	 recall_vowel: 0.7396552133936288	 recall_consonant: 0.752154868556675
+recall: 0.7138920093018528
+val epoch: 132 	val acc : 0.99%
+loss : 0.3690
+recall_grapheme:0.983035091211499	recall_vowel:0.9945811951893546	recall_consonant:0.9958317506118631
+recall: 0.9891207820560537
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:133 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000007
+ train epoch : 133	acc : 0.76%
+loss : 3.6216
+recall_grapheme: 0.6743668296585875	 recall_vowel: 0.7346429616110973	 recall_consonant: 0.7483647734537094
+recall: 0.7079353485954949
+val epoch: 133 	val acc : 0.99%
+loss : 0.3191
+recall_grapheme:0.9841734482515003	recall_vowel:0.9945428497607474	recall_consonant:0.99563341208575
+recall: 0.9896307895873749
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:134 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000005
+ train epoch : 134	acc : 0.76%
+loss : 3.5718
+recall_grapheme: 0.6870190170601975	 recall_vowel: 0.7411323493324674	 recall_consonant: 0.7577802586072679
+recall: 0.7182376605150319
+val epoch: 134 	val acc : 0.99%
+loss : 0.3323
+recall_grapheme:0.983870169841187	recall_vowel:0.9945804719681974	recall_consonant:0.9954717131723875
+recall: 0.9894481312057402
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:135 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000005
+ train epoch : 135	acc : 0.76%
+loss : 3.6914
+recall_grapheme: 0.6746159036515489	 recall_vowel: 0.7327224804367777	 recall_consonant: 0.7464874308400113
+recall: 0.7071104296449723
+val epoch: 135 	val acc : 0.99%
+loss : 0.3499
+recall_grapheme:0.9834544056983381	recall_vowel:0.9947650532681113	recall_consonant:0.9956983014770657
+recall: 0.9893430415354636
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:136 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000005
+ train epoch : 136	acc : 0.76%
+loss : 3.6370
+recall_grapheme: 0.6843448766699377	 recall_vowel: 0.7396468102844057	 recall_consonant: 0.7533007614353365
+recall: 0.7154093312649047
+val epoch: 136 	val acc : 0.99%
+loss : 0.3226
+recall_grapheme:0.9842268681614404	recall_vowel:0.9948581640138883	recall_consonant:0.9958362388300097
+recall: 0.9897870347916952
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:137 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000005
+ train epoch : 137	acc : 0.75%
+loss : 3.7598
+recall_grapheme: 0.6612112604512883	 recall_vowel: 0.7231425204300185	 recall_consonant: 0.7369191547923357
+recall: 0.6956210490312331
+val epoch: 137 	val acc : 0.99%
+loss : 0.2535
+recall_grapheme:0.9844868124527286	recall_vowel:0.9945222765636755	recall_consonant:0.9955507327719509
+recall: 0.9897616585602711
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:138 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000005
+ train epoch : 138	acc : 0.77%
+loss : 3.6284
+recall_grapheme: 0.6894074743547327	 recall_vowel: 0.7421800203860116	 recall_consonant: 0.7562109829316511
+recall: 0.7193014880067823
+val epoch: 138 	val acc : 0.99%
+loss : 0.3711
+recall_grapheme:0.9840796305897668	recall_vowel:0.9946498990427084	recall_consonant:0.9962023931523564
+recall: 0.9897528883436496
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:139 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000003
+ train epoch : 139	acc : 0.77%
+loss : 3.4332
+recall_grapheme: 0.6966387619441545	 recall_vowel: 0.7523198965082724	 recall_consonant: 0.7669117138604713
+recall: 0.7281272835642636
+val epoch: 139 	val acc : 0.99%
+loss : 0.2526
+recall_grapheme:0.9844655283946762	recall_vowel:0.9944153401380423	recall_consonant:0.9956301321435288
+recall: 0.9897441322677313
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:140 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000003
+ train epoch : 140	acc : 0.77%
+loss : 3.5195
+recall_grapheme: 0.688218393821153	 recall_vowel: 0.742549894330703	 recall_consonant: 0.7570267263773963
+recall: 0.7190033520876009
+val epoch: 140 	val acc : 0.99%
+loss : 0.2869
+recall_grapheme:0.9848814345887266	recall_vowel:0.9946829032212077	recall_consonant:0.9961367933198143
+recall: 0.9901456414296189
+Curr validation recall has increased from:  0.9900 to: 0.9901. Saving curr cycle checkpoint
+Global validation recall has increased from:  0.9900 to: 0.9901. Saving global checkpoint
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:141 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000003
+ train epoch : 141	acc : 0.76%
+loss : 3.5629
+recall_grapheme: 0.6764031294780027	 recall_vowel: 0.7345859820153313	 recall_consonant: 0.7493665483886346
+recall: 0.709189697339992
+val epoch: 141 	val acc : 0.99%
+loss : 0.2494
+recall_grapheme:0.9845239979827883	recall_vowel:0.9945268760384424	recall_consonant:0.9954057947938381
+recall: 0.9897451666994644
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:142 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000003
+ train epoch : 142	acc : 0.77%
+loss : 3.5254
+recall_grapheme: 0.6876393064998374	 recall_vowel: 0.7440109592149923	 recall_consonant: 0.7597897261990781
+recall: 0.7197698246034357
+val epoch: 142 	val acc : 0.99%
+loss : 0.3181
+recall_grapheme:0.9837274736585607	recall_vowel:0.9948620552397605	recall_consonant:0.9957357854646169
+recall: 0.9895131970053748
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:143 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000003
+ train epoch : 143	acc : 0.76%
+loss : 3.6399
+recall_grapheme: 0.6820323633208247	 recall_vowel: 0.7404522064629196	 recall_consonant: 0.7541318661577182
+recall: 0.714662199815572
+val epoch: 143 	val acc : 0.99%
+loss : 0.3368
+recall_grapheme:0.9833249851849746	recall_vowel:0.9944302419894432	recall_consonant:0.9960543402938022
+recall: 0.9892836381632983
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:144 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000003
+ train epoch : 144	acc : 0.74%
+loss : 3.8247
+recall_grapheme: 0.6576859205018433	 recall_vowel: 0.7191308274222178	 recall_consonant: 0.7343462633385535
+recall: 0.6922122329411137
+val epoch: 144 	val acc : 0.99%
+loss : 0.3015
+recall_grapheme:0.9841651256663804	recall_vowel:0.9946134296846513	recall_consonant:0.9957814016257632
+recall: 0.989681270660794
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:145 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000003
+ train epoch : 145	acc : 0.77%
+loss : 3.4409
+recall_grapheme: 0.6999042352742183	 recall_vowel: 0.7528414625010019	 recall_consonant: 0.7645089437369028
+recall: 0.7292897191965847
+val epoch: 145 	val acc : 0.99%
+loss : 0.3015
+recall_grapheme:0.9843995582158469	recall_vowel:0.9948803350884102	recall_consonant:0.9956199591380269
+recall: 0.989824852664533
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:146 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000002
+ train epoch : 146	acc : 0.76%
+loss : 3.6375
+recall_grapheme: 0.6747978072723758	 recall_vowel: 0.7342222066227655	 recall_consonant: 0.7493716836268054
+recall: 0.7082973761985811
+val epoch: 146 	val acc : 0.99%
+loss : 0.3343
+recall_grapheme:0.9847614097885213	recall_vowel:0.9946225760575051	recall_consonant:0.9959138962343638
+recall: 0.9900148229672283
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:147 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000002
+ train epoch : 147	acc : 0.77%
+loss : 3.5695
+recall_grapheme: 0.6875339377116781	 recall_vowel: 0.743727511104681	 recall_consonant: 0.7577424760143806
+recall: 0.7191344656356042
+val epoch: 147 	val acc : 0.99%
+loss : 0.3013
+recall_grapheme:0.9846674357806584	recall_vowel:0.9943229215303039	recall_consonant:0.9961094781486801
+recall: 0.9899418178100754
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:148 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000002
+ train epoch : 148	acc : 0.77%
+loss : 3.5221
+recall_grapheme: 0.6995180167473358	 recall_vowel: 0.7526004714712846	 recall_consonant: 0.7655618579418519
+recall: 0.7292995907269525
+val epoch: 148 	val acc : 0.99%
+loss : 0.3595
+recall_grapheme:0.9839898305510626	recall_vowel:0.9945005400524425	recall_consonant:0.9961873837045716
+recall: 0.989666896214785
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:149 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000002
+ train epoch : 149	acc : 0.76%
+loss : 3.6297
+recall_grapheme: 0.6747394070853177	 recall_vowel: 0.7354109943720992	 recall_consonant: 0.7476644372284225
+recall: 0.7081385614427889
+val epoch: 149 	val acc : 0.99%
+loss : 0.3067
+recall_grapheme:0.984031532287082	recall_vowel:0.9946630807526942	recall_consonant:0.9958137890690744
+recall: 0.9896349835989834
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:150 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000002
+ train epoch : 150	acc : 0.76%
+loss : 3.6984
+recall_grapheme: 0.6704598694743976	 recall_vowel: 0.7324935110722285	 recall_consonant: 0.7452207113813258
+recall: 0.7046584903505877
+val epoch: 150 	val acc : 0.99%
+loss : 0.3024
+recall_grapheme:0.9834710095334736	recall_vowel:0.9947048308002857	recall_consonant:0.9962468201895269
+recall: 0.9894734175141899
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:151 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000002
+ train epoch : 151	acc : 0.76%
+loss : 3.7326
+recall_grapheme: 0.6811868250486941	 recall_vowel: 0.7351117373470178	 recall_consonant: 0.749540423662161
+recall: 0.7117564527766413
+val epoch: 151 	val acc : 0.99%
+loss : 0.3987
+recall_grapheme:0.9839085859726276	recall_vowel:0.9948142014749545	recall_consonant:0.9958273613065596
+recall: 0.9896146836816927
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:152 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000002
+ train epoch : 152	acc : 0.77%
+loss : 3.6178
+recall_grapheme: 0.6879078329573509	 recall_vowel: 0.7426538951003895	 recall_consonant: 0.7531737605624351
+recall: 0.7179108303943814
+val epoch: 152 	val acc : 0.99%
+loss : 0.3086
+recall_grapheme:0.984583769913554	recall_vowel:0.9947966285128151	recall_consonant:0.9960021693419248
+recall: 0.9899915844204622
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:153 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000002
+ train epoch : 153	acc : 0.76%
+loss : 3.5813
+recall_grapheme: 0.6855923638170834	 recall_vowel: 0.7409563260902841	 recall_consonant: 0.7570613657247232
+recall: 0.7173006048622931
+val epoch: 153 	val acc : 0.99%
+loss : 0.2906
+recall_grapheme:0.9843968140103425	recall_vowel:0.994747605966725	recall_consonant:0.9953864860747165
+recall: 0.989731930015532
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:154 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000002
+ train epoch : 154	acc : 0.75%
+loss : 3.7115
+recall_grapheme: 0.6696305929952978	 recall_vowel: 0.7288149530552857	 recall_consonant: 0.7432966024144999
+recall: 0.7028431853650955
+val epoch: 154 	val acc : 0.99%
+loss : 0.3335
+recall_grapheme:0.9845843184921367	recall_vowel:0.9944997887209767	recall_consonant:0.9956324468917553
+recall: 0.9898252181492516
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:155 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000002
+ train epoch : 155	acc : 0.76%
+loss : 3.5726
+recall_grapheme: 0.6758575674340336	 recall_vowel: 0.7354355762286475	 recall_consonant: 0.7530507960373167
+recall: 0.7100503767835079
+val epoch: 155 	val acc : 0.99%
+loss : 0.4084
+recall_grapheme:0.9836016655271979	recall_vowel:0.9946543311924013	recall_consonant:0.9960760383538226
+recall: 0.9894834251501547
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:156 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000001
+ train epoch : 156	acc : 0.77%
+loss : 3.4196
+recall_grapheme: 0.696142655643079	 recall_vowel: 0.7499589503652234	 recall_consonant: 0.7668324642030693
+recall: 0.7272691814636132
+val epoch: 156 	val acc : 0.99%
+loss : 0.2596
+recall_grapheme:0.9842274943614455	recall_vowel:0.9946866798996166	recall_consonant:0.9958987657982222
+recall: 0.989760108605183
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:157 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000001
+ train epoch : 157	acc : 0.77%
+loss : 3.6215
+recall_grapheme: 0.6897122780868428	 recall_vowel: 0.7427882427842338	 recall_consonant: 0.7565416436471962
+recall: 0.7196886106512791
+val epoch: 157 	val acc : 0.99%
+loss : 0.3290
+recall_grapheme:0.9837916469836295	recall_vowel:0.9947320983254303	recall_consonant:0.9959604476130757
+recall: 0.9895689599764412
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:158 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000001
+ train epoch : 158	acc : 0.77%
+loss : 3.5304
+recall_grapheme: 0.6876871631979378	 recall_vowel: 0.7422162449329457	 recall_consonant: 0.7546231416692895
+recall: 0.7180534282495277
+val epoch: 158 	val acc : 0.99%
+loss : 0.3771
+recall_grapheme:0.984014659916988	recall_vowel:0.9946831695016108	recall_consonant:0.9960401190103726
+recall: 0.9896881520864901
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:159 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000001
+ train epoch : 159	acc : 0.76%
+loss : 3.6065
+recall_grapheme: 0.6771225009116774	 recall_vowel: 0.7356379254001205	 recall_consonant: 0.7482986305346168
+recall: 0.7095453894395228
+val epoch: 159 	val acc : 0.99%
+loss : 0.4187
+recall_grapheme:0.9829761111465295	recall_vowel:0.9947256678237122	recall_consonant:0.9961643532971377
+recall: 0.9892105608534774
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:160 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000001
+ train epoch : 160	acc : 0.75%
+loss : 3.7038
+recall_grapheme: 0.6720617406138742	 recall_vowel: 0.7297710579367501	 recall_consonant: 0.7441175687534293
+recall: 0.7045030269794819
+val epoch: 160 	val acc : 0.99%
+loss : 0.2631
+recall_grapheme:0.9841790536670698	recall_vowel:0.9945238863611441	recall_consonant:0.9955283827170387
+recall: 0.9896025941030812
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:161 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000001
+ train epoch : 161	acc : 0.76%
+loss : 3.6579
+recall_grapheme: 0.6798303812020816	 recall_vowel: 0.7375973833519409	 recall_consonant: 0.750135116888339
+recall: 0.7118483156611106
+val epoch: 161 	val acc : 0.99%
+loss : 0.3250
+recall_grapheme:0.9841908651103124	recall_vowel:0.994547364107837	recall_consonant:0.9957033726323412
+recall: 0.989658116740201
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:162 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000001
+ train epoch : 162	acc : 0.76%
+loss : 3.7211
+recall_grapheme: 0.6737595263436557	 recall_vowel: 0.7337257430411173	 recall_consonant: 0.7443659337661991
+recall: 0.7064026823736569
+val epoch: 162 	val acc : 0.99%
+loss : 0.4354
+recall_grapheme:0.9833568122211593	recall_vowel:0.9944766100038509	recall_consonant:0.9956858160098124
+recall: 0.9892190126139954
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:163 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000001
+ train epoch : 163	acc : 0.75%
+loss : 3.6823
+recall_grapheme: 0.6676598053041203	 recall_vowel: 0.7264704677430122	 recall_consonant: 0.7435079061551259
+recall: 0.7013244961265944
+val epoch: 163 	val acc : 0.99%
+loss : 0.3743
+recall_grapheme:0.9827736426632412	recall_vowel:0.9947574044534473	recall_consonant:0.9960359736104537
+recall: 0.9890851658475954
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:164 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000001
+ train epoch : 164	acc : 0.75%
+loss : 3.7588
+recall_grapheme: 0.6632373046936928	 recall_vowel: 0.7242974050137116	 recall_consonant: 0.7424265351027969
+recall: 0.6982996373759742
+val epoch: 164 	val acc : 0.99%
+loss : 0.3782
+recall_grapheme:0.9832291956796542	recall_vowel:0.9946924940477593	recall_consonant:0.996225511030934
+recall: 0.9893440991095003
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:165 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000001
+ train epoch : 165	acc : 0.78%
+loss : 3.3501
+recall_grapheme: 0.7110125376039769	 recall_vowel: 0.7617362826643559	 recall_consonant: 0.7751959890965169
+recall: 0.7397393367422067
+val epoch: 165 	val acc : 0.99%
+loss : 0.2930
+recall_grapheme:0.9832492198590015	recall_vowel:0.9946516266460603	recall_consonant:0.9961390024546652
+recall: 0.9893222672046821
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:166 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000001
+ train epoch : 166	acc : 0.78%
+loss : 3.3840
+recall_grapheme: 0.708451431591066	 recall_vowel: 0.7595297179738899	 recall_consonant: 0.7723695320326447
+recall: 0.7372005282971662
+val epoch: 166 	val acc : 0.99%
+loss : 0.2854
+recall_grapheme:0.9840785746216898	recall_vowel:0.9948163029403843	recall_consonant:0.9961562154466788
+recall: 0.9897824169076102
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:167 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000001
+ train epoch : 167	acc : 0.79%
+loss : 3.3376
+recall_grapheme: 0.714611936595574	 recall_vowel: 0.7651934844341632	 recall_consonant: 0.7776345817472591
+recall: 0.7430129848431428
+val epoch: 167 	val acc : 0.99%
+loss : 0.2347
+recall_grapheme:0.9844271254866245	recall_vowel:0.9946802496589062	recall_consonant:0.9957548068501119
+recall: 0.989822326870567
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:168 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000001
+ train epoch : 168	acc : 0.77%
+loss : 3.6393
+recall_grapheme: 0.6923718465106324	 recall_vowel: 0.7444433734195055	 recall_consonant: 0.7561823896372872
+recall: 0.7213423640195142
+val epoch: 168 	val acc : 0.99%
+loss : 0.3567
+recall_grapheme:0.983407924433884	recall_vowel:0.9943800670436845	recall_consonant:0.9959354360942595
+recall: 0.9892828380014282
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:169 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000001
+ train epoch : 169	acc : 0.76%
+loss : 3.6539
+recall_grapheme: 0.6811804235573113	 recall_vowel: 0.7362671307670555	 recall_consonant: 0.7520327056245898
+recall: 0.7126651708765668
+val epoch: 169 	val acc : 0.99%
+loss : 0.3853
+recall_grapheme:0.9836833235361049	recall_vowel:0.9946148209024226	recall_consonant:0.9956401762419755
+recall: 0.9894054110541521
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:170 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000001
+ train epoch : 170	acc : 0.76%
+loss : 3.6243
+recall_grapheme: 0.6818106408192272	 recall_vowel: 0.7395041037027513	 recall_consonant: 0.7556785880772752
+recall: 0.7147009933546201
+val epoch: 170 	val acc : 0.99%
+loss : 0.2989
+recall_grapheme:0.9854854006158532	recall_vowel:0.9947746424162259	recall_consonant:0.9960935798779363
+recall: 0.9904597558814676
+Curr validation recall has increased from:  0.9901 to: 0.9905. Saving curr cycle checkpoint
+Global validation recall has increased from:  0.9901 to: 0.9905. Saving global checkpoint
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:171 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000001
+ train epoch : 171	acc : 0.76%
+loss : 3.6086
+recall_grapheme: 0.6879545830358693	 recall_vowel: 0.7393629438467383	 recall_consonant: 0.7519273701551228
+recall: 0.7167998700184
+val epoch: 171 	val acc : 0.99%
+loss : 0.2420
+recall_grapheme:0.9840384548173718	recall_vowel:0.9944157931312512	recall_consonant:0.9951778687226688
+recall: 0.9894176428721662
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:172 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000001
+ train epoch : 172	acc : 0.75%
+loss : 3.7051
+recall_grapheme: 0.6680855765369029	 recall_vowel: 0.7278688875407872	 recall_consonant: 0.7415576837705417
+recall: 0.7013994310962833
+val epoch: 172 	val acc : 0.99%
+loss : 0.3364
+recall_grapheme:0.9843189762633261	recall_vowel:0.99444981336014	recall_consonant:0.9959140222898224
+recall: 0.9897504470441534
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:173 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000001
+ train epoch : 173	acc : 0.75%
+loss : 3.6615
+recall_grapheme: 0.6683892281782471	 recall_vowel: 0.7264733513895536	 recall_consonant: 0.7423028043815774
+recall: 0.7013886530319065
+val epoch: 173 	val acc : 0.99%
+loss : 0.3575
+recall_grapheme:0.984165355810725	recall_vowel:0.9945236420332115	recall_consonant:0.9952800153062675
+recall: 0.9895335922402322
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:174 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000001
+ train epoch : 174	acc : 0.77%
+loss : 3.5083
+recall_grapheme: 0.6954900775357371	 recall_vowel: 0.7496157101455094	 recall_consonant: 0.7629652794851707
+recall: 0.7258902861755389
+val epoch: 174 	val acc : 0.99%
+loss : 0.3168
+recall_grapheme:0.9840248397447162	recall_vowel:0.9947023055465264	recall_consonant:0.9958168541329196
+recall: 0.9896422097922201
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:175 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000001
+ train epoch : 175	acc : 0.76%
+loss : 3.6018
+recall_grapheme: 0.6777621593907345	 recall_vowel: 0.7356727721822822	 recall_consonant: 0.7520812469159077
+recall: 0.710819584469915
+val epoch: 175 	val acc : 0.99%
+loss : 0.3069
+recall_grapheme:0.9840418255263753	recall_vowel:0.9947400372717089	recall_consonant:0.996091799669248
+recall: 0.989728871998427
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:176 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000000
+ train epoch : 176	acc : 0.76%
+loss : 3.5988
+recall_grapheme: 0.682151980779146	 recall_vowel: 0.7396800216153422	 recall_consonant: 0.7553273413097843
+recall: 0.7148278311208545
+val epoch: 176 	val acc : 0.99%
+loss : 0.3035
+recall_grapheme:0.9842899270323778	recall_vowel:0.9946118201642279	recall_consonant:0.9956227350173797
+recall: 0.989703602311591
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:177 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000000
+ train epoch : 177	acc : 0.77%
+loss : 3.5354
+recall_grapheme: 0.6934235901552617	 recall_vowel: 0.7483389000331694	 recall_consonant: 0.7603326854109744
+recall: 0.7238796914386665
+val epoch: 177 	val acc : 0.99%
+loss : 0.2972
+recall_grapheme:0.9843291124086176	recall_vowel:0.994615025781574	recall_consonant:0.9960175334433626
+recall: 0.9898226960105428
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:178 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000000
+ train epoch : 178	acc : 0.75%
+loss : 3.6922
+recall_grapheme: 0.6669820683337282	 recall_vowel: 0.7263640697322361	 recall_consonant: 0.7376361154621032
+recall: 0.6994910804654492
+val epoch: 178 	val acc : 0.99%
+loss : 0.2987
+recall_grapheme:0.9835133241411252	recall_vowel:0.994405194803434	recall_consonant:0.9956275919356229
+recall: 0.9892648587553269
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:179 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000000
+ train epoch : 179	acc : 0.76%
+loss : 3.5857
+recall_grapheme: 0.6824421098970691	 recall_vowel: 0.7387099490715768	 recall_consonant: 0.7517410765952272
+recall: 0.7138338113652352
+val epoch: 179 	val acc : 0.99%
+loss : 0.3985
+recall_grapheme:0.9824819275903655	recall_vowel:0.99480552672608	recall_consonant:0.9956200395103099
+recall: 0.9888473553542806
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:180 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000000
+ train epoch : 180	acc : 0.76%
+loss : 3.6407
+recall_grapheme: 0.681421963719735	 recall_vowel: 0.7369127852668075	 recall_consonant: 0.7524688709039447
+recall: 0.7130563959025553
+val epoch: 180 	val acc : 0.99%
+loss : 0.3836
+recall_grapheme:0.9837089549162459	recall_vowel:0.9947056469582373	recall_consonant:0.9957209175243752
+recall: 0.9894611185787762
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:181 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000000
+ train epoch : 181	acc : 0.76%
+loss : 3.5991
+recall_grapheme: 0.6864223460426192	 recall_vowel: 0.7424319317419679	 recall_consonant: 0.7545419539237589
+recall: 0.7174546444377407
+val epoch: 181 	val acc : 0.99%
+loss : 0.3032
+recall_grapheme:0.9835426683877284	recall_vowel:0.9949897713388973	recall_consonant:0.9961076148739578
+recall: 0.9895456807470778
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:182 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000000
+ train epoch : 182	acc : 0.75%
+loss : 3.7010
+recall_grapheme: 0.6704773738458034	 recall_vowel: 0.7271598957952752	 recall_consonant: 0.7446837328629324
+recall: 0.7031995940874536
+val epoch: 182 	val acc : 0.99%
+loss : 0.4000
+recall_grapheme:0.9839339898604479	recall_vowel:0.9944095342300087	recall_consonant:0.9962477167979867
+recall: 0.9896313076872225
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:183 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000000
+ train epoch : 183	acc : 0.76%
+loss : 3.7001
+recall_grapheme: 0.6836816610473371	 recall_vowel: 0.7373691269618771	 recall_consonant: 0.7511754859557123
+recall: 0.7139769837530657
+val epoch: 183 	val acc : 0.99%
+loss : 0.3552
+recall_grapheme:0.9834305158520804	recall_vowel:0.9947091032661357	recall_consonant:0.9956488689550291
+recall: 0.9893047509813312
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:184 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000000
+ train epoch : 184	acc : 0.79%
+loss : 3.3377
+recall_grapheme: 0.713874525521459	 recall_vowel: 0.7646151263587652	 recall_consonant: 0.775365672094294
+recall: 0.7419324623739945
+val epoch: 184 	val acc : 0.99%
+loss : 0.3696
+recall_grapheme:0.9834957277045742	recall_vowel:0.9946262690814524	recall_consonant:0.9959356464682683
+recall: 0.9893883427397174
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:185 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000000
+ train epoch : 185	acc : 0.77%
+loss : 3.4719
+recall_grapheme: 0.6927960761652188	 recall_vowel: 0.7485604054094691	 recall_consonant: 0.7639330083913136
+recall: 0.7245213915328045
+val epoch: 185 	val acc : 0.99%
+loss : 0.2760
+recall_grapheme:0.9846101401472178	recall_vowel:0.9945393159311926	recall_consonant:0.9957649347491997
+recall: 0.9898811327437076
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:186 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000000
+ train epoch : 186	acc : 0.78%
+loss : 3.4803
+recall_grapheme: 0.7013941309793892	 recall_vowel: 0.7527517219402431	 recall_consonant: 0.7698189431368643
+recall: 0.7313397317589714
+val epoch: 186 	val acc : 0.99%
+loss : 0.3086
+recall_grapheme:0.9839964208704389	recall_vowel:0.9945885820734311	recall_consonant:0.9959916961609235
+recall: 0.9896432799938079
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:187 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000000
+ train epoch : 187	acc : 0.77%
+loss : 3.4737
+recall_grapheme: 0.6961937274656683	 recall_vowel: 0.7517520098608889	 recall_consonant: 0.7668015737561601
+recall: 0.7277352596370965
+val epoch: 187 	val acc : 0.99%
+loss : 0.3417
+recall_grapheme:0.9830261620608595	recall_vowel:0.9944695065704966	recall_consonant:0.9956211319473958
+recall: 0.9890357406599026
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:188 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000000
+ train epoch : 188	acc : 0.77%
+loss : 3.5564
+recall_grapheme: 0.6888899945272215	 recall_vowel: 0.7435072945092449	 recall_consonant: 0.7573990908782214
+recall: 0.7196715936104768
+val epoch: 188 	val acc : 0.99%
+loss : 0.3217
+recall_grapheme:0.9841757549458674	recall_vowel:0.9948757558863754	recall_consonant:0.9956130962721287
+recall: 0.98971009051256
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:189 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000000
+ train epoch : 189	acc : 0.77%
+loss : 3.5021
+recall_grapheme: 0.6982779078686339	 recall_vowel: 0.7500377491618198	 recall_consonant: 0.7620441120255765
+recall: 0.7271594192311666
+val epoch: 189 	val acc : 0.99%
+loss : 0.3780
+recall_grapheme:0.9830898378593204	recall_vowel:0.9946505928939917	recall_consonant:0.9957198935244218
+recall: 0.9891375405342638
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:190 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000000
+ train epoch : 190	acc : 0.77%
+loss : 3.6300
+recall_grapheme: 0.6940947749340464	 recall_vowel: 0.7457435999421202	 recall_consonant: 0.7619757548305088
+recall: 0.7239772261601807
+val epoch: 190 	val acc : 0.99%
+loss : 0.3543
+recall_grapheme:0.9835968462227446	recall_vowel:0.9948100082648216	recall_consonant:0.9961832935246694
+recall: 0.989546748558745
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:191 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000000
+ train epoch : 191	acc : 0.76%
+loss : 3.5954
+recall_grapheme: 0.6863033027041654	 recall_vowel: 0.7419302315922471	 recall_consonant: 0.7539007054221486
+recall: 0.7171093856056817
+val epoch: 191 	val acc : 0.99%
+loss : 0.3729
+recall_grapheme:0.9835404729417585	recall_vowel:0.9945518049366994	recall_consonant:0.9961791252483798
+recall: 0.9894529690171492
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:192 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000000
+ train epoch : 192	acc : 0.75%
+loss : 3.8074
+recall_grapheme: 0.6621143104852584	 recall_vowel: 0.7215810685535391	 recall_consonant: 0.734393599991755
+recall: 0.6950508223789533
+val epoch: 192 	val acc : 0.99%
+loss : 0.3134
+recall_grapheme:0.9831731039186903	recall_vowel:0.9948019599803328	recall_consonant:0.9956214496234875
+recall: 0.9891924043603001
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:193 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000000
+ train epoch : 193	acc : 0.77%
+loss : 3.5379
+recall_grapheme: 0.6894032927916899	 recall_vowel: 0.7462515065446416	 recall_consonant: 0.7585363078923575
+recall: 0.7208986000050951
+val epoch: 193 	val acc : 0.99%
+loss : 0.2571
+recall_grapheme:0.9846564528717541	recall_vowel:0.99499895020607	recall_consonant:0.9960203444454642
+recall: 0.990083050098761
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:194 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000000
+ train epoch : 194	acc : 0.75%
+loss : 3.7485
+recall_grapheme: 0.6742350114314399	 recall_vowel: 0.7301088678278292	 recall_consonant: 0.7455535355078794
+recall: 0.7060331065496472
+val epoch: 194 	val acc : 0.99%
+loss : 0.3674
+recall_grapheme:0.9833143302278426	recall_vowel:0.9946764740737146	recall_consonant:0.9954880546930748
+recall: 0.9891982973056187
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:195 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000000
+ train epoch : 195	acc : 0.76%
+loss : 3.6174
+recall_grapheme: 0.6879112394414006	 recall_vowel: 0.7418229771977134	 recall_consonant: 0.7559585975502493
+recall: 0.718401013407691
+val epoch: 195 	val acc : 0.99%
+loss : 0.3422
+recall_grapheme:0.9837641954949538	recall_vowel:0.994638893943444	recall_consonant:0.9960426769447388
+recall: 0.9895524904695224
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:196 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000000
+ train epoch : 196	acc : 0.75%
+loss : 3.7530
+recall_grapheme: 0.659413180249065	 recall_vowel: 0.721448308950052	 recall_consonant: 0.7371977657321268
+recall: 0.6943681087950776
+val epoch: 196 	val acc : 0.99%
+loss : 0.3079
+recall_grapheme:0.9841691784886689	recall_vowel:0.9948352568786909	recall_consonant:0.9959278934817505
+recall: 0.9897753768344447
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:197 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000000
+ train epoch : 197	acc : 0.76%
+loss : 3.6668
+recall_grapheme: 0.679858699838482	 recall_vowel: 0.7365702397113265	 recall_consonant: 0.7506322878535213
+recall: 0.7117299818104531
+val epoch: 197 	val acc : 0.99%
+loss : 0.2545
+recall_grapheme:0.9846551163028804	recall_vowel:0.9946548971632607	recall_consonant:0.9958115562561325
+recall: 0.9899441715062886
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:198 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000000
+ train epoch : 198	acc : 0.77%
+loss : 3.6103
+recall_grapheme: 0.6909948295095978	 recall_vowel: 0.7462762699899932	 recall_consonant: 0.7631402185656744
+recall: 0.7228515368937151
+val epoch: 198 	val acc : 0.99%
+loss : 0.2904
+recall_grapheme:0.9837619058072393	recall_vowel:0.9946277252931653	recall_consonant:0.9958817225677569
+recall: 0.9895083148688502
+
+
+XXXXXXXXXXXXXX--CYCLE NUM: 0  CYCLE INTER:199 --XXXXXXXXXXXXXXXXXXX
+curr lr: 0.000000
+ train epoch : 199	acc : 0.76%
+loss : 3.6856
+recall_grapheme: 0.6785334810397472	 recall_vowel: 0.7362064461462633	 recall_consonant: 0.748979107461516
+recall: 0.7105631289218187
+val epoch: 199 	val acc : 0.99%
+loss : 0.2773
+recall_grapheme:0.9843283483780596	recall_vowel:0.9946574296839527	recall_consonant:0.9960930339356648
+recall: 0.9898517900939348
