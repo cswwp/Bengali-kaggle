@@ -332,7 +332,7 @@ if __name__ == '__main__':
                                                        eta_min=0)
         elif args.LR_SCHEDULER == 'REDUCED':
             #scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau
-            scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='max', min_lr=1e-7, patience=args.patience, factor=args.lr_ratio)
+            scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='max', patience=args.patience, factor=args.lr_ratio)
 
         # DATASET SETUP
         csv_path = args.csv_path  # 'BengaliData'
