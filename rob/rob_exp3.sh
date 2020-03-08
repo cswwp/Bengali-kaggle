@@ -3,7 +3,7 @@
 # Rob First experiment with Parker's setup
 python train.py \
     --model senet50 \
-    --outdir 0305/seresnext50_resize128_gridmask2/ \
+    --outdir 0305/seresnext50_resize128_gridmask3/ \
     --gpu_ids 0,1 \
     --width 128 \
     --height 128  \
